@@ -123,6 +123,12 @@ Binaries are placed in `deploy/`. MPI targets are built automatically if MPI is 
 
 # Run multiple repetitions
 ./deploy/local_max_matching --read_graph graph.metis --edge_rating weight --repetitions 10
+
+# Write the matching to a file (one edge per line: "node1 node2")
+./deploy/local_max_matching --read_graph graph.metis --edge_rating weight --matching_output_file matching.txt
+
+# With multiple repetitions, the best matching (by weight) is written
+./deploy/local_max_matching --read_graph graph.metis --edge_rating rand --seed 42 --repetitions 10 --matching_output_file matching.txt
 ```
 
 ### Parallel (MPI)
@@ -130,6 +136,9 @@ Binaries are placed in `deploy/`. MPI targets are built automatically if MPI is 
 ```bash
 # Run with 4 MPI processes
 mpirun -np 4 ./deploy/parallel_local_max_matching --read_graph graph.metis --edge_rating weight
+
+# Write matching to file (edges from all processes are gathered)
+mpirun -np 4 ./deploy/parallel_local_max_matching --read_graph graph.metis --edge_rating weight --matching_output_file matching.txt
 
 # With extended communication statistics
 mpirun -np 16 ./deploy/parallel_local_max_matching_more_info --read_graph graph.metis --edge_rating weight
@@ -149,6 +158,7 @@ mpirun -np 16 ./deploy/parallel_local_max_matching_more_info --read_graph graph.
 | `--edge_rating TYPE` | Edge rating function (see below) |
 | `--seed SEED` | Random seed (for `rand` edge rating) |
 | `--repetitions N` | Number of repetitions (default: 1) |
+| `--matching_output_file PATH` | Write matched edge pairs to file |
 
 **Edge rating functions:**
 
@@ -173,7 +183,18 @@ Rounds: 3
 Size of Matching: 495
 Weight of Matching: 185.8
 Is maximal Matching: true
+Matching written to matching.txt
 ```
+
+When `--matching_output_file` is specified, the matching is written as one edge per line with 0-indexed vertex IDs:
+
+```
+0 72
+3 690
+4 628
+```
+
+With multiple `--repetitions`, the matching with the highest weight is written.
 
 ## Graph Input Format
 
