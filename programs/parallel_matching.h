@@ -206,13 +206,13 @@ int parallel_matching(int argc, char **argv)
 
 	if(!matching_output_file.empty())
 	{
-		// convert local matching edges to global vertex IDs
+		// matching edges already contain global vertex IDs
 		std::vector<unsigned int> local_pairs;
 		for(typename std::vector<Edge>::iterator it=matching.begin();
 				it!=matching.end(); it++)
 		{
-			local_pairs.push_back(g.local_vertex_id_to_global_id(it->n1));
-			local_pairs.push_back(g.local_vertex_id_to_global_id(it->n2));
+			local_pairs.push_back(it->n1);
+			local_pairs.push_back(it->n2);
 		}
 
 		int local_count = local_pairs.size();
