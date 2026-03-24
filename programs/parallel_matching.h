@@ -7,9 +7,7 @@
 #include <vector>
 #include <list>
 
-#ifdef MORE_INFORMATION
 #include <fstream>
-#endif
 
 #include <mpi.h>
 
@@ -43,6 +41,7 @@ int parallel_matching(int argc, char **argv)
 
 	bool read_graph, create_kn, create_grid;
 	std::string path, rating;
+	std::string matching_output_file;
 	unsigned int num_vertices_cmd_lin, dim, dim_length;
 	int seed;
 	unsigned int repetitions;
@@ -52,7 +51,8 @@ int parallel_matching(int argc, char **argv)
 								 create_kn, num_vertices_cmd_lin,
 								 create_grid, dim, dim_length,
 								 rating, seed, repetitions,
-								 is_root);
+								 is_root,
+								 &matching_output_file);
 
 	NodeIDType num_vertices = num_vertices_cmd_lin;
 	EdgeIDType num_edges;
@@ -202,6 +202,56 @@ int parallel_matching(int argc, char **argv)
 		std::cout << "Weight of Matching: " << global_weight << std::endl;
 
 		std::cout << "Is maximal Matching: " << maximal_matching << std::endl;
+	}
+
+	if(!matching_output_file.empty())
+	{
+		// convert local matching edges to global vertex IDs
+		std::vector<unsigned int> local_pairs;
+		for(typename std::vector<Edge>::iterator it=matching.begin();
+				it!=matching.end(); it++)
+		{
+			local_pairs.push_back(g.local_vertex_id_to_global_id(it->n1));
+			local_pairs.push_back(g.local_vertex_id_to_global_id(it->n2));
+		}
+
+		int local_count = local_pairs.size();
+		std::vector<int> recv_counts(procs);
+		MPI_Gather(&local_count, 1, MPI_INT, &recv_counts[0], 1, MPI_INT, 0, MPI_COMM_WORLD);
+
+		std::vector<int> displs(procs, 0);
+		int total_count = 0;
+		if(is_root)
+		{
+			for(int i=0; i<procs; i++)
+			{
+				displs[i] = total_count;
+				total_count += recv_counts[i];
+			}
+		}
+
+		std::vector<unsigned int> all_pairs(total_count);
+		MPI_Gatherv(&local_pairs[0], local_count, MPI_UNSIGNED,
+					&all_pairs[0], &recv_counts[0], &displs[0], MPI_UNSIGNED,
+					0, MPI_COMM_WORLD);
+
+		if(is_root)
+		{
+			std::ofstream outfile(matching_output_file.c_str());
+			if(outfile.is_open())
+			{
+				for(int i=0; i<total_count; i+=2)
+				{
+					outfile << all_pairs[i] << " " << all_pairs[i+1] << std::endl;
+				}
+				outfile.close();
+				std::cout << "Matching written to " << matching_output_file << std::endl;
+			}
+			else
+			{
+				std::cerr << "Error: could not open " << matching_output_file << " for writing." << std::endl;
+			}
+		}
 	}
 
 	return 0;

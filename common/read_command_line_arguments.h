@@ -19,7 +19,8 @@ void read_command_line_args(int argc, char **argv,
 							bool &create_kn, unsigned int &num_vertices,
 							bool &create_grid, unsigned int &dim, unsigned int &dim_length,
 							std::string &rating, int &seed, unsigned int &repetitions,
-							bool is_root=true)
+							bool is_root=true,
+							std::string *matching_output_file=NULL)
 {
 	// set default values
 	read_graph  = false;
@@ -40,6 +41,7 @@ void read_command_line_args(int argc, char **argv,
 			("edge_rating", boost::program_options::value<std::string>(&rating)->default_value("const"), "Specifies the edge rating. Possible arguments: const, weight, expansionstar2, rand .")
 			("seed", boost::program_options::value<int>(&seed), "Provides the seed used for computing random values.")
 			("repetitions", boost::program_options::value<unsigned int>(&repetitions)->default_value(1), "How often to repeat the computation of the matching.")
+			("matching_output_file", boost::program_options::value<std::string>(), "Write matched edge pairs to the specified file.")
 			;
 
 	boost::program_options::variables_map vm;
@@ -62,6 +64,11 @@ void read_command_line_args(int argc, char **argv,
 	if(!vm.count("seed") && (rating.compare("rand")==0))
 	{// no seed provided but using random weights
 		seed = time(NULL);
+	}
+
+	if(matching_output_file != NULL && vm.count("matching_output_file"))
+	{
+		*matching_output_file = vm["matching_output_file"].as<std::string>();
 	}
 
 	if(vm.count("help"))

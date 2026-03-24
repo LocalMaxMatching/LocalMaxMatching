@@ -15,6 +15,7 @@
 
 #include <common/hash_functions.h>
 
+#include <fstream>
 
 template <class Matching, class Graph>
 int matching(int argc, char **argv)
@@ -31,6 +32,7 @@ int matching(int argc, char **argv)
 
 	bool read_graph, create_kn, create_grid;
 	std::string path, rating;
+	std::string matching_output_file;
 	unsigned int num_vertices_cmd_lin, dim, dim_length;
 	int seed;
 	unsigned int repetitions;
@@ -40,7 +42,8 @@ int matching(int argc, char **argv)
 								 create_kn, num_vertices_cmd_lin,
 								 create_grid, dim, dim_length,
 								 rating, seed, repetitions,
-								 is_root);
+								 is_root,
+								 &matching_output_file);
 
 	NodeIDType num_vertices = num_vertices_cmd_lin;
 	EdgeIDType num_edges;
@@ -78,6 +81,8 @@ int matching(int argc, char **argv)
 	bool maximal_matching = false;
 	unsigned long matching_size = 0;
 	double global_weight = 0;
+	std::list<Edge> best_matching;
+	double best_weight = -1;
 
 	for(unsigned int i=0; i<repetitions; i++)
 	{
@@ -126,6 +131,11 @@ int matching(int argc, char **argv)
 		weights[i] = global_weight;
 
 		all_rounds[i] = rounds;
+		if(!matching_output_file.empty() && global_weight > best_weight)
+		{
+			best_weight = global_weight;
+			best_matching = matching;
+		}
 	}
 
 	if(is_root)
@@ -246,6 +256,28 @@ int matching(int argc, char **argv)
 		std::cout << std::endl;
 #endif
 
+	}
+
+	if(!matching_output_file.empty())
+	{
+		std::ofstream outfile(matching_output_file.c_str());
+		if(outfile.is_open())
+		{
+			for(typename std::list<Edge>::iterator it=best_matching.begin();
+					it!=best_matching.end(); it++)
+			{
+				outfile << it->n1 << " " << it->n2 << std::endl;
+			}
+			outfile.close();
+			if(is_root)
+			{
+				std::cout << "Matching written to " << matching_output_file << std::endl;
+			}
+		}
+		else
+		{
+			std::cerr << "Error: could not open " << matching_output_file << " for writing." << std::endl;
+		}
 	}
 
 	return 0;
