@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 260">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1a1a2e"/>
+      <stop offset="100%" stop-color="#16213e"/>
+    </linearGradient>
+    <radialGradient id="glow-matched" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#ef5350" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#ef5350" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow-unmatched" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#42a5f5" stop-opacity="0.10"/>
+      <stop offset="100%" stop-color="#42a5f5" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="900" height="260" rx="16" fill="url(#bg)"/>
+
+  <!-- Glows behind graph -->
+  <ellipse cx="200" cy="130" rx="180" ry="120" fill="url(#glow-matched)"/>
+  <ellipse cx="200" cy="130" rx="140" ry="100" fill="url(#glow-unmatched)"/>
+
+  <!-- All edges (thin, dim) -->
+  <g stroke="#42a5f5" stroke-width="1.2" opacity="0.25">
+    <line x1="80" y1="70" x2="150" y2="50"/>
+    <line x1="80" y1="70" x2="60" y2="140"/>
+    <line x1="80" y1="70" x2="150" y2="120"/>
+    <line x1="150" y1="50" x2="240" y2="55"/>
+    <line x1="150" y1="50" x2="150" y2="120"/>
+    <line x1="60" y1="140" x2="150" y2="120"/>
+    <line x1="60" y1="140" x2="100" y2="200"/>
+    <line x1="150" y1="120" x2="240" y2="55"/>
+    <line x1="150" y1="120" x2="240" y2="140"/>
+    <line x1="150" y1="120" x2="100" y2="200"/>
+    <line x1="240" y1="55" x2="320" y2="80"/>
+    <line x1="240" y1="55" x2="240" y2="140"/>
+    <line x1="240" y1="140" x2="320" y2="80"/>
+    <line x1="240" y1="140" x2="320" y2="170"/>
+    <line x1="240" y1="140" x2="180" y2="210"/>
+    <line x1="100" y1="200" x2="180" y2="210"/>
+    <line x1="180" y1="210" x2="320" y2="170"/>
+    <line x1="320" y1="80" x2="320" y2="170"/>
+    <line x1="320" y1="170" x2="280" y2="220"/>
+    <line x1="180" y1="210" x2="280" y2="220"/>
+  </g>
+
+  <!-- Matched edges (thick, bright red) -->
+  <line x1="80" y1="70" x2="60" y2="140" stroke="#ef5350" stroke-width="3" opacity="0.8"/>
+  <line x1="150" y1="50" x2="150" y2="120" stroke="#ef5350" stroke-width="3" opacity="0.8"/>
+  <line x1="240" y1="55" x2="320" y2="80" stroke="#ef5350" stroke-width="3" opacity="0.8"/>
+  <line x1="240" y1="140" x2="320" y2="170" stroke="#ef5350" stroke-width="3" opacity="0.8"/>
+  <line x1="100" y1="200" x2="180" y2="210" stroke="#ef5350" stroke-width="3" opacity="0.8"/>
+
+  <!-- Matched nodes (red) -->
+  <circle cx="80" cy="70" r="8" fill="#ef5350"/>
+  <circle cx="60" cy="140" r="8" fill="#ef5350"/>
+  <circle cx="150" cy="50" r="8" fill="#ef5350"/>
+  <circle cx="150" cy="120" r="8" fill="#ef5350"/>
+  <circle cx="240" cy="55" r="8" fill="#ef5350"/>
+  <circle cx="320" cy="80" r="8" fill="#ef5350"/>
+  <circle cx="240" cy="140" r="8" fill="#ef5350"/>
+  <circle cx="320" cy="170" r="8" fill="#ef5350"/>
+  <circle cx="100" cy="200" r="8" fill="#ef5350"/>
+  <circle cx="180" cy="210" r="8" fill="#ef5350"/>
+
+  <!-- Unmatched nodes (blue) -->
+  <circle cx="280" cy="220" r="7" fill="#42a5f5"/>
+
+  <!-- Title -->
+  <text x="440" y="105" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="64" font-weight="700" fill="#e0e0e0" letter-spacing="1">
+    <tspan fill="#e0e0e0">Local</tspan><tspan fill="#ef5350">Max</tspan><tspan fill="#e0e0e0">Matching</tspan>
+  </text>
+
+  <!-- Subtitle -->
+  <text x="443" y="140" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="18" fill="#90a4ae" letter-spacing="1">
+    Efficient Parallel and External Matching
+  </text>
+
+  <!-- Legend -->
+  <line x1="450" y1="185" x2="470" y2="185" stroke="#ef5350" stroke-width="3" opacity="0.8"/>
+  <circle cx="450" cy="185" r="5" fill="#ef5350"/>
+  <circle cx="470" cy="185" r="5" fill="#ef5350"/>
+  <text x="482" y="189" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" fill="#a0a0a0">Matched</text>
+
+  <line x1="560" y1="185" x2="580" y2="185" stroke="#42a5f5" stroke-width="1.2" opacity="0.4"/>
+  <circle cx="560" cy="185" r="4" fill="#42a5f5"/>
+  <circle cx="580" cy="185" r="4" fill="#42a5f5"/>
+  <text x="592" y="189" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" fill="#a0a0a0">Unmatched</text>
+
+  <text x="673" y="189" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" fill="#a0a0a0">1/2-approx  &#183;  linear work  &#183;  MPI</text>
+</svg>
