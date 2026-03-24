@@ -1,1 +1,3 @@
-common/.get_graph.h.swp
+build/
+bin/
+*.swp

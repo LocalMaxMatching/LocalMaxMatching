@@ -46,12 +46,22 @@ ArXiv preprint: [https://arxiv.org/abs/1302.4587](https://arxiv.org/abs/1302.458
 
 ## Building
 
+### CMake (recommended)
+
 ```bash
-# Build a specific target (recommended: enable optimization)
+cmake -B build -DCMAKE_BUILD_TYPE=Release
+cmake --build build -j$(nproc)
+```
+
+Binaries are placed in `build/`. MPI targets are built automatically if MPI is found; otherwise they are skipped.
+
+### Make (legacy)
+
+```bash
 # Edit the makefile to set OPTIMIZATION = -O3, then:
 make bin/local_max_matching
 
-# Build parallel variants (requires MPI)
+# Parallel variants (requires MPI)
 make bin/parallel_local_max_matching
 ```
 
@@ -67,31 +77,27 @@ make bin/local_max_matching BOOST_INC=/path/to/boost/include BOOST_LIB=/path/to/
 
 | Target | Description |
 |--------|-------------|
-| `bin/local_max_matching` | Local maximum matching |
-| `bin/local_max_matching_more_info` | Local maximum matching with per-round edge counts |
-| `bin/local_tree_matching` | Local tree maximum matching (tree DP refinement) |
-| `bin/local_tree_matching_more_info` | Local tree matching with extended output |
-| `bin/karp_sipser_matching` | Karp-Sipser approximate matching |
-| `bin/mixed-karp_sipser-local_max` | Hybrid Karp-Sipser and local max |
+| `local_max_matching` | Local maximum matching |
+| `local_tree_matching` | Local tree maximum matching (tree DP refinement) |
+| `karp_sipser_matching` | Karp-Sipser approximate matching |
+| `mixed-karp_sipser-local_max` | Hybrid Karp-Sipser and local max |
 
 **Parallel matching programs (MPI):**
 
 | Target | Description |
 |--------|-------------|
-| `bin/parallel_local_max_matching` | Distributed local maximum matching |
-| `bin/parallel_local_max_matching_more_info` | With communication statistics |
-| `bin/parallel_local_tree_matching` | Distributed local tree matching |
-| `bin/parallel_local_tree_matching_more_info` | With extended output |
+| `parallel_local_max_matching` | Distributed local maximum matching |
+| `parallel_local_max_matching_more_info` | With communication statistics |
 
 **Utility programs:**
 
 | Target | Description |
 |--------|-------------|
-| `bin/add_random_weights_to_metis_graph` | Add random edge weights to a METIS graph |
-| `bin/create_node_index_for_metis_graph` | Create byte-offset index for fast graph access |
-| `bin/arrange_nodes_along_a_curve` | Reorder nodes spatially (improves locality) |
-| `bin/matrix_market_to_bipartite_metis` | Convert Matrix Market format to bipartite METIS |
-| `bin/compute_edge_distribution` | Analyze edge distribution across MPI processes |
+| `add_random_weights_to_metis_graph` | Add random edge weights to a METIS graph |
+| `create_node_index_for_metis_graph` | Create byte-offset index for fast graph access |
+| `arrange_nodes_along_a_curve` | Reorder nodes spatially (improves locality) |
+| `matrix_market_to_bipartite_metis` | Convert Matrix Market format to bipartite METIS |
+| `compute_edge_distribution` | Analyze edge distribution across MPI processes |
 
 ## Usage
 
