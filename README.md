@@ -55,22 +55,6 @@ cmake --build build -j$(nproc)
 
 Binaries are placed in `build/`. MPI targets are built automatically if MPI is found; otherwise they are skipped.
 
-### Make (legacy)
-
-```bash
-# Edit the makefile to set OPTIMIZATION = -O3, then:
-make bin/local_max_matching
-
-# Parallel variants (requires MPI)
-make bin/parallel_local_max_matching
-```
-
-You can set `BOOST_INC` and `BOOST_LIB` if Boost is installed in a non-standard location:
-
-```bash
-make bin/local_max_matching BOOST_INC=/path/to/boost/include BOOST_LIB=/path/to/boost/lib
-```
-
 ### Build Targets
 
 **Sequential matching programs:**
@@ -105,32 +89,32 @@ make bin/local_max_matching BOOST_INC=/path/to/boost/include BOOST_LIB=/path/to/
 
 ```bash
 # Compute a maximum weight matching on a graph in METIS format
-./bin/local_max_matching --read_graph graph.metis --edge_rating weight
+./build/local_max_matching --read_graph graph.metis --edge_rating weight
 
 # Compute a maximal cardinality matching (unit weights)
-./bin/local_max_matching --read_graph graph.metis --edge_rating const
+./build/local_max_matching --read_graph graph.metis --edge_rating const
 
 # Use random edge weights with a specific seed
-./bin/local_max_matching --read_graph graph.metis --edge_rating rand --seed 42
+./build/local_max_matching --read_graph graph.metis --edge_rating rand --seed 42
 
 # Run on a complete graph K_100
-./bin/local_max_matching --kn --vertices 100 --edge_rating rand --seed 1
+./build/local_max_matching --kn --vertices 100 --edge_rating rand --seed 1
 
 # Run on a 2D grid graph
-./bin/local_max_matching --grid --dim 2 --dim_length 100 --edge_rating rand --seed 1
+./build/local_max_matching --grid --dim 2 --dim_length 100 --edge_rating rand --seed 1
 
 # Run multiple repetitions
-./bin/local_max_matching --read_graph graph.metis --edge_rating weight --repetitions 10
+./build/local_max_matching --read_graph graph.metis --edge_rating weight --repetitions 10
 ```
 
 ### Parallel (MPI)
 
 ```bash
 # Run with 4 MPI processes
-mpirun -np 4 ./bin/parallel_local_max_matching --read_graph graph.metis --edge_rating weight
+mpirun -np 4 ./build/parallel_local_max_matching --read_graph graph.metis --edge_rating weight
 
 # With extended communication statistics
-mpirun -np 16 ./bin/parallel_local_max_matching_more_info --read_graph graph.metis --edge_rating weight
+mpirun -np 16 ./build/parallel_local_max_matching_more_info --read_graph graph.metis --edge_rating weight
 ```
 
 ### Command-Line Options
@@ -231,8 +215,7 @@ LocalMaxMatching/
   matching_algorithms/    # Algorithm implementations (header-only)
   programs/               # Main programs (.cpp files)
   optimal_matchings/      # Optimal matching via LEMON (optional)
-  bin/                    # Build output directory
-  makefile                # Build system
+  CMakeLists.txt          # Build system
 ```
 
 ## License
