@@ -1,13 +1,13 @@
 # LocalMaxMatching
 
-<p align="center">
-  <img src="misc/banner.svg" alt="LocalMaxMatching Banner" width="600"/>
-</p>
-
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Platform: Linux](https://img.shields.io/badge/Platform-Linux-blue.svg)](https://www.linux.org/)
 [![MPI](https://img.shields.io/badge/MPI-supported-green.svg)](https://www.open-mpi.org/)
 [![arXiv](https://img.shields.io/badge/arXiv-1302.4587-b31b1b.svg)](https://arxiv.org/abs/1302.4587)
+
+<p align="center">
+  <img src="misc/banner.svg" alt="LocalMaxMatching Banner" width="600"/>
+</p>
 
 Efficient parallel and sequential implementations of the **Local Maximum Matching** algorithm for computing maximal and approximate maximum weight matchings in graphs.
 
