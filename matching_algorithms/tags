@@ -1,0 +1,371 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_EXCMD	mixed	/number, pattern, mixed, or combineV2/
+!_TAG_OUTPUT_FILESEP	slash	/slash or backslash/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PATTERN_LENGTH_LIMIT	96	/0 for no limit/
+!_TAG_PROC_CWD	/mnt/Diskstation/Uni/Diplomarbeit/Development/matching_algorithms/	//
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	5.9.0	//
+ActiveNodeInfo	parallel_forest_matching.h	/^		ActiveNodeInfo()$/;"	f	struct:dipl::ParallelForestMatching::ActiveNodeInfo
+ActiveNodeInfo	parallel_forest_matching.h	/^		ActiveNodeInfo(NodeIDType active_node, bool parent_matched, bool used_incoming)$/;"	f	struct:dipl::ParallelForestMatching::ActiveNodeInfo
+ActiveNodeInfo	parallel_forest_matching.h	/^	struct ActiveNodeInfo$/;"	s	class:dipl::ParallelForestMatching
+BorderComponent	parallel_forest_matching.h	/^		BorderComponent()$/;"	f	struct:dipl::ParallelForestMatching::BorderComponent
+BorderComponent	parallel_forest_matching.h	/^	struct BorderComponent$/;"	s	class:dipl::ParallelForestMatching
+BorderComponentMSG	parallel_forest_matching.h	/^	struct BorderComponentMSG$/;"	s	class:dipl::ParallelForestMatching
+BorderComponentMSGType	parallel_forest_matching.h	/^	MPI_Datatype BorderComponentMSGType;$/;"	m	class:dipl::ParallelForestMatching	typeref:typename:MPI_Datatype
+BorderComponents	parallel_forest_matching.h	/^	typedef std::list<BorderComponent>	BorderComponents;$/;"	t	class:dipl::ParallelForestMatching	typeref:typename:std::list<BorderComponent>
+CANDIDATE_MESSAGE_TYPE	parallel_local_maximum_matching.h	/^	static MPI_Datatype CANDIDATE_MESSAGE_TYPE;$/;"	m	class:dipl::ParallelLocalMaximumMatching	typeref:typename:MPI_Datatype
+CANDIDATE_MESSAGE_TYPE	parallel_local_maximum_matching.h	/^MPI_Datatype ParallelLocalMaximumMatching<Graph, adjust_id>::CANDIDATE_MESSAGE_TYPE;$/;"	m	class:dipl::ParallelLocalMaximumMatching<Graph, adjust_id>	typeref:typename:MPI_Datatype
+CANDIDATE_MESSAGE_TYPE	parallel_local_tree_maximum_matching.h	/^	static MPI_Datatype CANDIDATE_MESSAGE_TYPE;$/;"	m	class:dipl::ParallelLocalTreeMaximumMatching	typeref:typename:MPI_Datatype
+CANDIDATE_MESSAGE_TYPE	parallel_local_tree_maximum_matching.h	/^MPI_Datatype ParallelLocalTreeMaximumMatching<Graph, adjust_id>::CANDIDATE_MESSAGE_TYPE;$/;"	m	class:dipl::ParallelLocalTreeMaximumMatching<Graph, adjust_id>	typeref:typename:MPI_Datatype
+Candidate	parallel_local_maximum_matching.h	/^		Candidate()$/;"	f	struct:dipl::ParallelLocalMaximumMatching::Candidate
+Candidate	parallel_local_maximum_matching.h	/^		Candidate(const WeightType weight, const NodeIDType partner)$/;"	f	struct:dipl::ParallelLocalMaximumMatching::Candidate
+Candidate	parallel_local_maximum_matching.h	/^	struct Candidate$/;"	s	class:dipl::ParallelLocalMaximumMatching
+Candidate	parallel_local_tree_maximum_matching.h	/^		Candidate()$/;"	f	struct:dipl::ParallelLocalTreeMaximumMatching::Candidate
+Candidate	parallel_local_tree_maximum_matching.h	/^		Candidate(const EdgeIDType edge_id, const NodeIDType partner)$/;"	f	struct:dipl::ParallelLocalTreeMaximumMatching::Candidate
+Candidate	parallel_local_tree_maximum_matching.h	/^	struct Candidate$/;"	s	class:dipl::ParallelLocalTreeMaximumMatching
+ComponentMSG	parallel_forest_matching.h	/^	struct ComponentMSG$/;"	s	class:dipl::ParallelForestMatching
+ComponentMSGType	parallel_forest_matching.h	/^	MPI_Datatype ComponentMSGType;$/;"	m	class:dipl::ParallelForestMatching	typeref:typename:MPI_Datatype
+ConnectionComponent	parallel_forest_matching.h	/^		ConnectionComponent()$/;"	f	struct:dipl::ParallelForestMatching::ConnectionComponent
+ConnectionComponent	parallel_forest_matching.h	/^	struct ConnectionComponent$/;"	s	class:dipl::ParallelForestMatching
+ConnectionComponents	parallel_forest_matching.h	/^	typedef std::list<ConnectionComponent>	ConnectionComponents;$/;"	t	class:dipl::ParallelForestMatching	typeref:typename:std::list<ConnectionComponent>
+Edge	karp_sipser.h	/^	typedef typename Graph::Edge	   Edge;$/;"	t	class:dipl::KarpSipser	typeref:typename:Graph::Edge
+Edge	local_maximum_matching.h	/^	typedef typename Graph::Edge	   Edge;$/;"	t	class:dipl::LocalMaximumMatching	typeref:typename:Graph::Edge
+Edge	local_tree_maximum_matching.h	/^	typedef typename Graph::Edge	   Edge;$/;"	t	class:dipl::LocalTreeMaximumMatching	typeref:typename:Graph::Edge
+Edge	mixed-karp_sipser_and_local_max.h	/^	typedef typename Graph::Edge Edge;$/;"	t	class:dipl::MixedKarpSipserLocalMax	typeref:typename:Graph::Edge
+Edge	parallel_forest_matching.h	/^	typedef typename Graph::Edge Edge;$/;"	t	class:dipl::ParallelForestMatching	typeref:typename:Graph::Edge
+Edge	parallel_local_maximum_matching.h	/^	typedef typename Graph::Edge	   Edge;$/;"	t	class:dipl::ParallelLocalMaximumMatching	typeref:typename:Graph::Edge
+Edge	parallel_local_tree_maximum_matching.h	/^	typedef typename Graph::Edge	   		Edge;$/;"	t	class:dipl::ParallelLocalTreeMaximumMatching	typeref:typename:Graph::Edge
+EdgeIDType	karp_sipser.h	/^	typedef typename Graph::EdgeIDType EdgeIDType;$/;"	t	class:dipl::KarpSipser	typeref:typename:Graph::EdgeIDType
+EdgeIDType	local_maximum_matching-adjacency_array.h	/^	typedef typename Graph::EdgeIDType EdgeIDType;$/;"	t	class:dipl::LocalMaximumMatching_AdjacencyArray	typeref:typename:Graph::EdgeIDType
+EdgeIDType	local_maximum_matching-vertex_id_for_tie_breaking.h	/^	typedef typename Graph::EdgeIDType EdgeIDType;$/;"	t	class:dipl::LocalMaximumMatching	typeref:typename:Graph::EdgeIDType
+EdgeIDType	local_maximum_matching.h	/^	typedef typename Graph::EdgeIDType EdgeIDType;$/;"	t	class:dipl::LocalMaximumMatching	typeref:typename:Graph::EdgeIDType
+EdgeIDType	local_tree_maximum_matching.h	/^	typedef typename Graph::EdgeIDType EdgeIDType;$/;"	t	class:dipl::LocalTreeMaximumMatching	typeref:typename:Graph::EdgeIDType
+EdgeIDType	mixed-karp_sipser_and_local_max.h	/^	typedef typename Graph::EdgeIDType EdgeIDType;$/;"	t	class:dipl::MixedKarpSipserLocalMax	typeref:typename:Graph::EdgeIDType
+EdgeIDType	parallel_forest_matching.h	/^	typedef typename Graph::NodeIDType	EdgeIDType;$/;"	t	class:dipl::ParallelForestMatching	typeref:typename:Graph::NodeIDType
+EdgeIDType	parallel_local_maximum_matching.h	/^	typedef typename Graph::EdgeIDType EdgeIDType;$/;"	t	class:dipl::ParallelLocalMaximumMatching	typeref:typename:Graph::EdgeIDType
+EdgeIDType	parallel_local_tree_maximum_matching.h	/^	typedef typename Graph::EdgeIDType EdgeIDType;$/;"	t	class:dipl::ParallelLocalTreeMaximumMatching	typeref:typename:Graph::EdgeIDType
+Forest	parallel_forest_matching.h	/^	typedef AdjacencyList<NodeIDType, EdgeIDType> Forest;$/;"	t	class:dipl::ParallelForestMatching	typeref:typename:AdjacencyList<NodeIDType,EdgeIDType>
+KarpSipser	karp_sipser.h	/^class KarpSipser$/;"	c	namespace:dipl
+LocalMaximumMatching	local_maximum_matching-vertex_id_for_tie_breaking.h	/^class LocalMaximumMatching$/;"	c	namespace:dipl
+LocalMaximumMatching	local_maximum_matching.h	/^class LocalMaximumMatching$/;"	c	namespace:dipl
+LocalMaximumMatching_AdjacencyArray	local_maximum_matching-adjacency_array.h	/^class LocalMaximumMatching_AdjacencyArray$/;"	c	namespace:dipl
+LocalTreeMaximumMatching	local_tree_maximum_matching.h	/^class LocalTreeMaximumMatching$/;"	c	namespace:dipl
+MATCHED	parallel_local_maximum_matching.h	/^	static const NodeIDType MATCHED       = -1;\/\/std::numeric_limits<NodeIDType>::max();$/;"	m	class:dipl::ParallelLocalMaximumMatching	typeref:typename:const NodeIDType
+MATCHED	parallel_local_tree_maximum_matching.h	/^	static const NodeIDType MATCHED       = -1;\/\/std::numeric_limits<NodeIDType>::max();$/;"	m	class:dipl::ParallelLocalTreeMaximumMatching	typeref:typename:const NodeIDType
+MATCHED_MESSAGE_TYPE	parallel_local_maximum_matching.h	/^	static MPI_Datatype MATCHED_MESSAGE_TYPE;$/;"	m	class:dipl::ParallelLocalMaximumMatching	typeref:typename:MPI_Datatype
+MATCHED_MESSAGE_TYPE	parallel_local_maximum_matching.h	/^MPI_Datatype ParallelLocalMaximumMatching<Graph, adjust_id>::MATCHED_MESSAGE_TYPE;$/;"	m	class:dipl::ParallelLocalMaximumMatching<Graph, adjust_id>	typeref:typename:MPI_Datatype
+MATCHED_MESSAGE_TYPE	parallel_local_tree_maximum_matching.h	/^	static MPI_Datatype MATCHED_MESSAGE_TYPE;$/;"	m	class:dipl::ParallelLocalTreeMaximumMatching	typeref:typename:MPI_Datatype
+MATCHED_MESSAGE_TYPE	parallel_local_tree_maximum_matching.h	/^MPI_Datatype ParallelLocalTreeMaximumMatching<Graph, adjust_id>::MATCHED_MESSAGE_TYPE;$/;"	m	class:dipl::ParallelLocalTreeMaximumMatching<Graph, adjust_id>	typeref:typename:MPI_Datatype
+Message	parallel_local_maximum_matching.h	/^		Message()$/;"	f	struct:dipl::ParallelLocalMaximumMatching::Message
+Message	parallel_local_maximum_matching.h	/^		Message(const NodeIDType src, const NodeIDType candidate)$/;"	f	struct:dipl::ParallelLocalMaximumMatching::Message
+Message	parallel_local_maximum_matching.h	/^	struct Message$/;"	s	class:dipl::ParallelLocalMaximumMatching
+Message	parallel_local_tree_maximum_matching.h	/^		Message()$/;"	f	struct:dipl::ParallelLocalTreeMaximumMatching::Message
+Message	parallel_local_tree_maximum_matching.h	/^		Message(const NodeIDType src, const NodeIDType candidate)$/;"	f	struct:dipl::ParallelLocalTreeMaximumMatching::Message
+Message	parallel_local_tree_maximum_matching.h	/^	struct Message$/;"	s	class:dipl::ParallelLocalTreeMaximumMatching
+MixedKarpSipserLocalMax	mixed-karp_sipser_and_local_max.h	/^class MixedKarpSipserLocalMax$/;"	c	namespace:dipl
+NodeIDType	karp_sipser.h	/^	typedef typename Graph::NodeIDType NodeIDType;$/;"	t	class:dipl::KarpSipser	typeref:typename:Graph::NodeIDType
+NodeIDType	local_maximum_matching-adjacency_array.h	/^	typedef typename Graph::NodeIDType NodeIDType;$/;"	t	class:dipl::LocalMaximumMatching_AdjacencyArray	typeref:typename:Graph::NodeIDType
+NodeIDType	local_maximum_matching-vertex_id_for_tie_breaking.h	/^	typedef typename Graph::NodeIDType NodeIDType;$/;"	t	class:dipl::LocalMaximumMatching	typeref:typename:Graph::NodeIDType
+NodeIDType	local_maximum_matching.h	/^	typedef typename Graph::NodeIDType NodeIDType;$/;"	t	class:dipl::LocalMaximumMatching	typeref:typename:Graph::NodeIDType
+NodeIDType	local_tree_maximum_matching.h	/^	typedef typename Graph::NodeIDType NodeIDType;$/;"	t	class:dipl::LocalTreeMaximumMatching	typeref:typename:Graph::NodeIDType
+NodeIDType	mixed-karp_sipser_and_local_max.h	/^	typedef typename Graph::NodeIDType NodeIDType;$/;"	t	class:dipl::MixedKarpSipserLocalMax	typeref:typename:Graph::NodeIDType
+NodeIDType	parallel_forest_matching.h	/^	typedef typename Graph::NodeIDType	NodeIDType;$/;"	t	class:dipl::ParallelForestMatching	typeref:typename:Graph::NodeIDType
+NodeIDType	parallel_local_maximum_matching.h	/^	typedef typename Graph::NodeIDType NodeIDType;$/;"	t	class:dipl::ParallelLocalMaximumMatching	typeref:typename:Graph::NodeIDType
+NodeIDType	parallel_local_tree_maximum_matching.h	/^	typedef typename Graph::NodeIDType NodeIDType;$/;"	t	class:dipl::ParallelLocalTreeMaximumMatching	typeref:typename:Graph::NodeIDType
+NodeIDType	tree_matching.h	/^	typedef typename Graph::NodeIDType NodeIDType;$/;"	t	function:tree_max_weighted_matching	typeref:typename:Graph::NodeIDType
+ParallelForestMatching	parallel_forest_matching.h	/^	ParallelForestMatching(const Graph &g)$/;"	f	class:dipl::ParallelForestMatching
+ParallelForestMatching	parallel_forest_matching.h	/^class ParallelForestMatching$/;"	c	namespace:dipl
+ParallelLocalMaximumMatching	parallel_local_maximum_matching.h	/^class ParallelLocalMaximumMatching$/;"	c	namespace:dipl
+ParallelLocalTreeMaximumMatching	parallel_local_tree_maximum_matching.h	/^class ParallelLocalTreeMaximumMatching$/;"	c	namespace:dipl
+ParallelTreeInfo	parallel_forest_matching.h	/^	struct ParallelTreeInfo$/;"	s	class:dipl::ParallelForestMatching
+ParallelTreeInfoMSGType	parallel_forest_matching.h	/^	MPI_Datatype ParallelTreeInfoMSGType;$/;"	m	class:dipl::ParallelForestMatching	typeref:typename:MPI_Datatype
+Partner	parallel_forest_matching.h	/^		Partner()$/;"	f	struct:dipl::ParallelForestMatching::Partner
+Partner	parallel_forest_matching.h	/^		Partner(const int id, const NodeIDType ln, const NodeIDType gn)$/;"	f	struct:dipl::ParallelForestMatching::Partner
+Partner	parallel_forest_matching.h	/^	struct Partner$/;"	s	class:dipl::ParallelForestMatching
+SubtreeMSGType	parallel_forest_matching.h	/^	MPI_Datatype SubtreeMSGType;$/;"	m	class:dipl::ParallelForestMatching	typeref:typename:MPI_Datatype
+SubtreeResultMSG	parallel_forest_matching.h	/^	struct SubtreeResultMSG$/;"	s	class:dipl::ParallelForestMatching
+TopDownMSG	parallel_forest_matching.h	/^	struct TopDownMSG$/;"	s	class:dipl::ParallelForestMatching
+TopDownMSGType	parallel_forest_matching.h	/^	MPI_Datatype TopDownMSGType;$/;"	m	class:dipl::ParallelForestMatching	typeref:typename:MPI_Datatype
+WeightType	karp_sipser.h	/^	typedef typename Graph::WeightType WeightType;$/;"	t	class:dipl::KarpSipser	typeref:typename:Graph::WeightType
+WeightType	local_maximum_matching-adjacency_array.h	/^	typedef typename Graph::WeightType WeightType;$/;"	t	class:dipl::LocalMaximumMatching_AdjacencyArray	typeref:typename:Graph::WeightType
+WeightType	local_maximum_matching-vertex_id_for_tie_breaking.h	/^	typedef typename Graph::WeightType WeightType;$/;"	t	class:dipl::LocalMaximumMatching	typeref:typename:Graph::WeightType
+WeightType	local_maximum_matching.h	/^	typedef typename Graph::WeightType WeightType;$/;"	t	class:dipl::LocalMaximumMatching	typeref:typename:Graph::WeightType
+WeightType	local_tree_maximum_matching.h	/^	typedef typename Graph::WeightType WeightType;$/;"	t	class:dipl::LocalTreeMaximumMatching	typeref:typename:Graph::WeightType
+WeightType	mixed-karp_sipser_and_local_max.h	/^	typedef typename Graph::WeightType WeightType;$/;"	t	class:dipl::MixedKarpSipserLocalMax	typeref:typename:Graph::WeightType
+WeightType	parallel_forest_matching.h	/^	typedef typename Graph::WeightType	WeightType;$/;"	t	class:dipl::ParallelForestMatching	typeref:typename:Graph::WeightType
+WeightType	parallel_local_maximum_matching.h	/^	typedef typename Graph::WeightType WeightType;$/;"	t	class:dipl::ParallelLocalMaximumMatching	typeref:typename:Graph::WeightType
+WeightType	parallel_local_tree_maximum_matching.h	/^	typedef typename Graph::WeightType WeightType;$/;"	t	class:dipl::ParallelLocalTreeMaximumMatching	typeref:typename:Graph::WeightType
+WeightType	tree_matching.h	/^	typedef typename Graph::WeightType WeightType;$/;"	t	function:tree_max_weighted_matching	typeref:typename:Graph::WeightType
+_PARALLEL_LOCAL_MAXIMUM_MATCHING_H_	parallel_local_maximum_matching.h	/^#define _PARALLEL_LOCAL_MAXIMUM_MATCHING_H_$/;"	d
+_TREE_MATCHING_H_	parallel_forest_matching.h	/^#define _TREE_MATCHING_H_$/;"	d
+active_node	parallel_forest_matching.h	/^		NodeIDType active_node;$/;"	m	struct:dipl::ParallelForestMatching::ActiveNodeInfo	typeref:typename:NodeIDType
+add_local_max_edges_to_matchings	local_maximum_matching-adjacency_array.h	/^	static bool add_local_max_edges_to_matchings(const std::list<EdgeIDType> &matching_candidates,$/;"	f	class:dipl::LocalMaximumMatching_AdjacencyArray	typeref:typename:bool
+add_local_max_edges_to_matchings	mixed-karp_sipser_and_local_max.h	/^	static void add_local_max_edges_to_matchings(const std::list<EdgeIDType> &matching_candidates,$/;"	f	class:dipl::MixedKarpSipserLocalMax	typeref:typename:void
+add_matched_cross_edges_to_matching_and_prepare_messages_for_ghost_nodes_adjacent_to_matched_local_nodes	parallel_local_maximum_matching.h	/^	static void add_matched_cross_edges_to_matching_and_prepare_messages_for_ghost_nodes_adjacent_t/;"	f	class:dipl::ParallelLocalMaximumMatching	typeref:typename:void
+add_matched_edges_of_subtree_and_send_top_down_messages	parallel_forest_matching.h	/^	void add_matched_edges_of_subtree_and_send_top_down_messages(const NodeIDType root,$/;"	f	class:dipl::ParallelForestMatching	typeref:typename:void
+add_matching_edges	parallel_forest_matching.h	/^	inline void add_matching_edges(const NodeIDType &current_node,$/;"	f	class:dipl::ParallelForestMatching	typeref:typename:void
+add_matching_edges	tree_matching.h	/^inline void add_matching_edges(const NodeIDType &current_node,$/;"	f	typeref:typename:void
+back	parallel_forest_matching.h	/^		Partner& back()$/;"	f	struct:dipl::ParallelForestMatching::ConnectionComponent	typeref:typename:Partner &
+back	parallel_forest_matching.h	/^		const Partner& back() const$/;"	f	struct:dipl::ParallelForestMatching::ConnectionComponent	typeref:typename:const Partner &
+base_candidate	parallel_local_tree_maximum_matching.h	/^	static Candidate base_candidate;$/;"	m	class:dipl::ParallelLocalTreeMaximumMatching	typeref:typename:Candidate
+base_candidate	parallel_local_tree_maximum_matching.h	/^ParallelLocalTreeMaximumMatching<Graph, adjust_id>::base_candidate;$/;"	m	class:dipl::ParallelLocalTreeMaximumMatching<Graph, adjust_id>	typeref:typename:ParallelLocalTreeMaximumMatching<Graph,adjust_id>::Candidate
+begin	parallel_forest_matching.h	/^		const_iterator begin() const$/;"	f	struct:dipl::ParallelForestMatching::ConnectionComponent	typeref:typename:const_iterator
+begin	parallel_forest_matching.h	/^		iterator begin()$/;"	f	struct:dipl::ParallelForestMatching::ConnectionComponent	typeref:typename:iterator
+better_than_old_edge	local_maximum_matching-adjacency_array.h	/^	static bool better_than_old_edge(const WeightType old_weight, const EdgeIDType old_edge_id,$/;"	f	class:dipl::LocalMaximumMatching_AdjacencyArray	typeref:typename:bool
+better_than_old_edge	local_maximum_matching-vertex_id_for_tie_breaking.h	/^	static bool better_than_old_edge(const Graph &g,$/;"	f	class:dipl::LocalMaximumMatching	typeref:typename:bool
+better_than_old_edge	local_maximum_matching.h	/^	static bool better_than_old_edge(const WeightType old_weight, const EdgeIDType old_edge_id,$/;"	f	class:dipl::LocalMaximumMatching	typeref:typename:bool
+better_than_old_edge	local_tree_maximum_matching.h	/^	static bool better_than_old_edge(const Graph &g,$/;"	f	class:dipl::LocalTreeMaximumMatching	typeref:typename:bool
+better_than_old_edge	mixed-karp_sipser_and_local_max.h	/^	static bool better_than_old_edge(const WeightType old_weight, const EdgeIDType old_edge_id,$/;"	f	class:dipl::MixedKarpSipserLocalMax	typeref:typename:bool
+better_than_old_partner	parallel_local_maximum_matching.h	/^	static bool better_than_old_partner(const Graph &g, const NodeIDType src_id,$/;"	f	class:dipl::ParallelLocalMaximumMatching	typeref:typename:bool
+better_than_old_partner	parallel_local_tree_maximum_matching.h	/^	static bool better_than_old_partner(const Graph &g, const NodeIDType src_id,$/;"	f	class:dipl::ParallelLocalTreeMaximumMatching	typeref:typename:bool
+bottom_up_tag	parallel_forest_matching.h	/^	static const int bottom_up_tag = 8; \/\/ need a better mechanism for defining unique msg tags o/;"	m	class:dipl::ParallelForestMatching	typeref:typename:const int
+build_forest	parallel_forest_matching.h	/^	void build_forest(const Graph &g,$/;"	f	class:dipl::ParallelForestMatching	typeref:typename:void
+calls_to_g_for_gid_to_lid	parallel_forest_matching.h	/^	long calls_to_g_for_gid_to_lid;$/;"	m	class:dipl::ParallelForestMatching	typeref:typename:long
+candidate	parallel_local_maximum_matching.h	/^		NodeIDType candidate;$/;"	m	struct:dipl::ParallelLocalMaximumMatching::Message	typeref:typename:NodeIDType
+candidate	parallel_local_tree_maximum_matching.h	/^		NodeIDType candidate;$/;"	m	struct:dipl::ParallelLocalTreeMaximumMatching::Message	typeref:typename:NodeIDType
+candidate_messages_of_proc	parallel_local_maximum_matching.h	/^	ParallelLocalMaximumMatching<Graph, adjust_id>::candidate_messages_of_proc;$/;"	m	class:dipl::ParallelLocalMaximumMatching<Graph, adjust_id>	typeref:typename:std::vector<std::pair<std::vector<typename ParallelLocalMaximumMatching<Graph,adjust_id>::Message>,MPI_Request>>
+candidate_messages_of_proc	parallel_local_maximum_matching.h	/^	static std::vector< std::pair< std::vector<Message>, MPI_Request> >    candidate_messages_of_pr/;"	m	class:dipl::ParallelLocalMaximumMatching	typeref:typename:std::vector<std::pair<std::vector<Message>,MPI_Request>>
+candidate_messages_of_proc	parallel_local_tree_maximum_matching.h	/^	static std::vector< std::pair< std::vector<Message>, MPI_Request> >    candidate_messages_of_pr/;"	m	class:dipl::ParallelLocalTreeMaximumMatching	typeref:typename:std::vector<std::pair<std::vector<Message>,MPI_Request>>
+candidate_messages_of_proc	parallel_local_tree_maximum_matching.h	/^ParallelLocalTreeMaximumMatching<Graph, adjust_id>::candidate_messages_of_proc;$/;"	m	class:dipl::ParallelLocalTreeMaximumMatching<Graph, adjust_id>	typeref:typename:std::vector<std::pair<std::vector<typename ParallelLocalTreeMaximumMatching<Graph,adjust_id>::Message>,MPI_Request>>
+candidate_recv_messages	parallel_local_maximum_matching.h	/^	ParallelLocalMaximumMatching<Graph, adjust_id>::candidate_recv_messages;$/;"	m	class:dipl::ParallelLocalMaximumMatching<Graph, adjust_id>	typeref:typename:std::vector<std::vector<typename ParallelLocalMaximumMatching<Graph,adjust_id>::Message>>
+candidate_recv_messages	parallel_local_maximum_matching.h	/^	static std::vector< std::vector<Message> > candidate_recv_messages;$/;"	m	class:dipl::ParallelLocalMaximumMatching	typeref:typename:std::vector<std::vector<Message>>
+clear	parallel_forest_matching.h	/^		void clear()$/;"	f	struct:dipl::ParallelForestMatching::BorderComponent	typeref:typename:void
+clear	parallel_forest_matching.h	/^		void clear()$/;"	f	struct:dipl::ParallelForestMatching::ConnectionComponent	typeref:typename:void
+clear_messages	parallel_local_maximum_matching.h	/^	static void clear_messages(std::vector< std::pair< std::vector<MTYPE>, MPI_Request> > &messages/;"	f	class:dipl::ParallelLocalMaximumMatching	typeref:typename:void
+clear_messages	parallel_local_tree_maximum_matching.h	/^	static void clear_messages(std::vector< std::pair< std::vector<MTYPE>, MPI_Request> > &messages/;"	f	class:dipl::ParallelLocalTreeMaximumMatching	typeref:typename:void
+clear_recv_buffers	parallel_local_maximum_matching.h	/^	static void clear_recv_buffers()$/;"	f	class:dipl::ParallelLocalMaximumMatching	typeref:typename:void
+communication_factor	parallel_local_maximum_matching.h	/^	static unsigned int communication_factor;$/;"	m	class:dipl::ParallelLocalMaximumMatching	typeref:typename:unsigned int
+communication_factor	parallel_local_maximum_matching.h	/^unsigned int ParallelLocalMaximumMatching<Graph, adjust_id>::communication_factor = 1;$/;"	m	class:dipl::ParallelLocalMaximumMatching<Graph, adjust_id>	typeref:typename:unsigned int
+communication_time	parallel_local_maximum_matching.h	/^	static double communication_time;$/;"	m	class:dipl::ParallelLocalMaximumMatching	typeref:typename:double
+communication_time	parallel_local_maximum_matching.h	/^double ParallelLocalMaximumMatching<Graph, adjust_id>::communication_time = 0.;$/;"	m	class:dipl::ParallelLocalMaximumMatching<Graph, adjust_id>	typeref:typename:double
+component_depth	parallel_forest_matching.h	/^		NodeIDType component_depth;$/;"	m	struct:dipl::ParallelForestMatching::ParallelTreeInfo	typeref:typename:NodeIDType
+compute_approximate_maximum_matching	karp_sipser.h	/^	static void compute_approximate_maximum_matching(Graph &g,$/;"	f	class:dipl::KarpSipser	typeref:typename:void
+compute_approximate_maximum_matching	mixed-karp_sipser_and_local_max.h	/^	static void compute_approximate_maximum_matching(Graph &g,$/;"	f	class:dipl::MixedKarpSipserLocalMax	typeref:typename:void
+compute_local_tree_matchings	parallel_local_tree_maximum_matching.h	/^	static void compute_local_tree_matchings($/;"	f	class:dipl::ParallelLocalTreeMaximumMatching	typeref:typename:void
+compute_matching_of_local_trees	parallel_forest_matching.h	/^	void compute_matching_of_local_trees(const Graph &g,$/;"	f	class:dipl::ParallelForestMatching	typeref:typename:void
+compute_matching_of_parallel_trees	parallel_forest_matching.h	/^	void compute_matching_of_parallel_trees(const std::vector<NodeIDType> &roots_of_parallel_trees,$/;"	f	class:dipl::ParallelForestMatching	typeref:typename:void
+compute_subtree_information_and_add_messages_for_parent	parallel_forest_matching.h	/^	void compute_subtree_information_and_add_messages_for_parent(const NodeIDType root)$/;"	f	class:dipl::ParallelForestMatching	typeref:typename:void
+compute_weighted_matching	karp_sipser.h	/^	static void compute_weighted_matching(Graph &g,$/;"	f	class:dipl::KarpSipser	typeref:typename:void
+compute_weighted_matching	local_maximum_matching-adjacency_array.h	/^	static void compute_weighted_matching(Graph &g,$/;"	f	class:dipl::LocalMaximumMatching_AdjacencyArray	typeref:typename:void
+compute_weighted_matching	local_maximum_matching-vertex_id_for_tie_breaking.h	/^	static void compute_weighted_matching(Graph &g,$/;"	f	class:dipl::LocalMaximumMatching	typeref:typename:void
+compute_weighted_matching	local_maximum_matching.h	/^	static void compute_weighted_matching(Graph &g,$/;"	f	class:dipl::LocalMaximumMatching	typeref:typename:void
+compute_weighted_matching	local_tree_maximum_matching.h	/^	static void compute_weighted_matching(Graph &g,$/;"	f	class:dipl::LocalTreeMaximumMatching	typeref:typename:void
+compute_weighted_matching	mixed-karp_sipser_and_local_max.h	/^	static void compute_weighted_matching(Graph &g,$/;"	f	class:dipl::MixedKarpSipserLocalMax	typeref:typename:void
+compute_weighted_matching	parallel_local_maximum_matching.h	/^	static void compute_weighted_matching(Graph &g,$/;"	f	class:dipl::ParallelLocalMaximumMatching	typeref:typename:void
+compute_weighted_matching	parallel_local_tree_maximum_matching.h	/^	static void compute_weighted_matching(Graph &g,$/;"	f	class:dipl::ParallelLocalTreeMaximumMatching	typeref:typename:void
+connection_component_ptr_of_vertex	parallel_forest_matching.h	/^	std::vector<BorderComponent*> connection_component_ptr_of_vertex;$/;"	m	class:dipl::ParallelForestMatching	typeref:typename:std::vector<BorderComponent * >
+const_edge_iterator	parallel_local_maximum_matching.h	/^	typedef typename Graph::const_edge_iterator const_edge_iterator;$/;"	t	class:dipl::ParallelLocalMaximumMatching	typeref:typename:Graph::const_edge_iterator
+const_edge_iterator	parallel_local_tree_maximum_matching.h	/^	typedef typename Graph::const_edge_iterator const_edge_iterator;$/;"	t	class:dipl::ParallelLocalTreeMaximumMatching	typeref:typename:Graph::const_edge_iterator
+const_iterator	parallel_forest_matching.h	/^		typedef typename std::list<Partner>::const_iterator const_iterator;$/;"	t	struct:dipl::ParallelForestMatching::BorderComponent	typeref:typename:std::list<Partner>::const_iterator
+const_iterator	parallel_forest_matching.h	/^		typedef typename std::list<Partner>::const_iterator const_iterator;$/;"	t	struct:dipl::ParallelForestMatching::ConnectionComponent	typeref:typename:std::list<Partner>::const_iterator
+deactivate_cross_edges_incident_to_matched_nodes	parallel_local_maximum_matching.h	/^	static void deactivate_cross_edges_incident_to_matched_nodes(Graph &g, const std::vector<bool> /;"	f	class:dipl::ParallelLocalMaximumMatching	typeref:typename:void
+deactivate_edge	karp_sipser.h	/^	static void deactivate_edge(Graph &g, EdgeIDType edge_id, std::list<NodeIDType> &modified_nodes/;"	f	class:dipl::KarpSipser	typeref:typename:void
+deactivate_edge	mixed-karp_sipser_and_local_max.h	/^	static void deactivate_edge(Graph &g, EdgeIDType edge_id,$/;"	f	class:dipl::MixedKarpSipserLocalMax	typeref:typename:void
+deactivate_edge_and_adjacent_edges	local_maximum_matching-adjacency_array.h	/^	static void deactivate_edge_and_adjacent_edges(const EdgeIDType edge_id,$/;"	f	class:dipl::LocalMaximumMatching_AdjacencyArray	typeref:typename:void
+deactivate_edges	parallel_local_tree_maximum_matching.h	/^	static void deactivate_edges(Graph &g, const std::vector<bool> &matched, std::vector<Candidate /;"	f	class:dipl::ParallelLocalTreeMaximumMatching	typeref:typename:void
+deactivate_edges_incident_to_matched_nodes	parallel_local_maximum_matching.h	/^	static inline void deactivate_edges_incident_to_matched_nodes(Graph &g, const std::vector<bool>/;"	f	class:dipl::ParallelLocalMaximumMatching	typeref:typename:void
+deactivate_local_edges_incident_to_matched_nodes	parallel_local_maximum_matching.h	/^	static void deactivate_local_edges_incident_to_matched_nodes(Graph &g, const std::vector<bool> /;"	f	class:dipl::ParallelLocalMaximumMatching	typeref:typename:void
+decide_on_global_roots	parallel_forest_matching.h	/^	void decide_on_global_roots(const Graph &g,$/;"	f	class:dipl::ParallelForestMatching	typeref:typename:void
+decide_on_root_node_tag	parallel_forest_matching.h	/^	static const int decide_on_root_node_tag = 10;$/;"	m	class:dipl::ParallelForestMatching	typeref:typename:const int
+decide_on_root_process	parallel_forest_matching.h	/^	void decide_on_root_process(const Graph &g,$/;"	f	class:dipl::ParallelForestMatching	typeref:typename:void
+depth	parallel_forest_matching.h	/^		NodeIDType depth;$/;"	m	struct:dipl::ParallelForestMatching::ParallelTreeInfo	typeref:typename:NodeIDType
+dipl	karp_sipser.h	/^namespace dipl$/;"	n
+dipl	local_maximum_matching-adjacency_array.h	/^namespace dipl$/;"	n
+dipl	local_maximum_matching-vertex_id_for_tie_breaking.h	/^namespace dipl$/;"	n
+dipl	local_maximum_matching.h	/^namespace dipl$/;"	n
+dipl	local_tree_maximum_matching.h	/^namespace dipl$/;"	n
+dipl	mixed-karp_sipser_and_local_max.h	/^namespace dipl$/;"	n
+dipl	parallel_forest_matching.h	/^namespace dipl$/;"	n
+dipl	parallel_local_maximum_matching.h	/^namespace dipl$/;"	n
+dipl	parallel_local_tree_maximum_matching.h	/^namespace dipl$/;"	n
+edge_id	parallel_local_tree_maximum_matching.h	/^		EdgeIDType edge_id;$/;"	m	struct:dipl::ParallelLocalTreeMaximumMatching::Candidate	typeref:typename:EdgeIDType
+edge_iterator	karp_sipser.h	/^		typedef typename Graph::edge_id_iterator edge_iterator;$/;"	t	function:dipl::KarpSipser::compute_approximate_maximum_matching	typeref:typename:Graph::edge_id_iterator
+edge_iterator	local_maximum_matching-vertex_id_for_tie_breaking.h	/^		typedef typename Graph::edge_iterator edge_iterator;$/;"	t	function:dipl::LocalMaximumMatching::compute_weighted_matching	typeref:typename:Graph::edge_iterator
+edge_iterator	local_maximum_matching.h	/^		typedef typename Graph::edge_iterator edge_iterator;$/;"	t	function:dipl::LocalMaximumMatching::compute_weighted_matching	typeref:typename:Graph::edge_iterator
+edge_iterator	local_tree_maximum_matching.h	/^		typedef typename Graph::edge_iterator edge_iterator;$/;"	t	function:dipl::LocalTreeMaximumMatching::compute_weighted_matching	typeref:typename:Graph::edge_iterator
+edge_iterator	mixed-karp_sipser_and_local_max.h	/^		typedef typename Graph::edge_id_iterator edge_iterator;$/;"	t	function:dipl::MixedKarpSipserLocalMax::compute_approximate_maximum_matching	typeref:typename:Graph::edge_id_iterator
+edge_iterator	parallel_local_maximum_matching.h	/^	typedef typename Graph::edge_iterator edge_iterator;$/;"	t	class:dipl::ParallelLocalMaximumMatching	typeref:typename:Graph::edge_iterator
+edge_iterator	parallel_local_tree_maximum_matching.h	/^	typedef typename Graph::edge_iterator 		edge_iterator;$/;"	t	class:dipl::ParallelLocalTreeMaximumMatching	typeref:typename:Graph::edge_iterator
+empty	parallel_forest_matching.h	/^		bool empty() const$/;"	f	struct:dipl::ParallelForestMatching::ConnectionComponent	typeref:typename:bool
+end	parallel_forest_matching.h	/^		const_iterator end() const$/;"	f	struct:dipl::ParallelForestMatching::ConnectionComponent	typeref:typename:const_iterator
+end	parallel_forest_matching.h	/^		iterator end()$/;"	f	struct:dipl::ParallelForestMatching::ConnectionComponent	typeref:typename:iterator
+exchange_candidates_all_to_all	parallel_local_maximum_matching.h	/^	static void exchange_candidates_all_to_all(const Graph &g,$/;"	f	class:dipl::ParallelLocalMaximumMatching	typeref:typename:void
+exchange_ghost_vertices_all_to_all	parallel_local_maximum_matching.h	/^	static void exchange_ghost_vertices_all_to_all(const Graph &g,$/;"	f	class:dipl::ParallelLocalMaximumMatching	typeref:typename:void
+fill_subtree_table_bottom_up_parallel	parallel_forest_matching.h	/^	void fill_subtree_table_bottom_up_parallel(const Graph &g,$/;"	f	class:dipl::ParallelForestMatching	typeref:typename:void
+fill_subtree_table_for_given_root_and_add_messages_for_parent_tree	parallel_forest_matching.h	/^	void fill_subtree_table_for_given_root_and_add_messages_for_parent_tree(const NodeIDType root)$/;"	f	class:dipl::ParallelForestMatching	typeref:typename:void
+forest	parallel_forest_matching.h	/^	Forest forest;$/;"	m	class:dipl::ParallelForestMatching	typeref:typename:Forest
+g	parallel_forest_matching.h	/^	const Graph &g;$/;"	m	class:dipl::ParallelForestMatching	typeref:typename:const Graph &
+get_border_components	parallel_forest_matching.h	/^	void get_border_components(const std::vector<EdgeIDType> &local_edges,$/;"	f	class:dipl::ParallelForestMatching	typeref:typename:void
+get_connection_components	parallel_forest_matching.h	/^	void get_connection_components(const std::vector<EdgeIDType> &local_edges,$/;"	f	class:dipl::ParallelForestMatching	typeref:typename:void
+get_ghost_candidates	parallel_local_maximum_matching.h	/^	static void get_ghost_candidates(const Graph &g,$/;"	f	class:dipl::ParallelLocalMaximumMatching	typeref:typename:void
+get_local_id_of_ghost_vertex	parallel_forest_matching.h	/^	NodeIDType get_local_id_of_ghost_vertex(const NodeIDType global_ghost_id,$/;"	f	class:dipl::ParallelForestMatching	typeref:typename:NodeIDType
+get_matching	parallel_forest_matching.h	/^	void get_matching(const Graph &g,$/;"	f	class:dipl::ParallelForestMatching	typeref:typename:void
+get_matching_of_parallel_forest	parallel_forest_matching.h	/^	void get_matching_of_parallel_forest(const std::vector<NodeIDType> &roots_of_parallel_trees,$/;"	f	class:dipl::ParallelForestMatching	typeref:typename:void
+get_maximal_incident_edge	local_maximum_matching-adjacency_array.h	/^	static bool get_maximal_incident_edge(const NodeIDType node_id,$/;"	f	class:dipl::LocalMaximumMatching_AdjacencyArray	typeref:typename:bool
+get_maximal_incident_edge	mixed-karp_sipser_and_local_max.h	/^	static bool get_maximal_incident_edge(const NodeIDType node_id,$/;"	f	class:dipl::MixedKarpSipserLocalMax	typeref:typename:bool
+get_parallel_tree_information	parallel_forest_matching.h	/^	void get_parallel_tree_information(const std::vector<NodeIDType> &roots_of_parallel_trees)$/;"	f	class:dipl::ParallelForestMatching	typeref:typename:void
+get_parallel_tree_matching	parallel_forest_matching.h	/^	void get_parallel_tree_matching(const std::vector<NodeIDType> &roots_of_local_trees,$/;"	f	class:dipl::ParallelForestMatching	typeref:typename:void
+get_pending_msgs_of_root	parallel_forest_matching.h	/^	NodeIDType get_pending_msgs_of_root(const NodeIDType root)$/;"	f	class:dipl::ParallelForestMatching	typeref:typename:NodeIDType
+get_structure_of_parallel_trees	parallel_forest_matching.h	/^	void get_structure_of_parallel_trees(const std::vector<EdgeIDType> &local_edges,$/;"	f	class:dipl::ParallelForestMatching	typeref:typename:void
+get_subtree_info	parallel_forest_matching.h	/^	void get_subtree_info(const NodeIDType root,$/;"	f	class:dipl::ParallelForestMatching	typeref:typename:void
+get_weight	karp_sipser.h	/^	static double get_weight(const Graph &g, const std::list<Edge> &matching)$/;"	f	class:dipl::KarpSipser	typeref:typename:double
+get_weight	local_maximum_matching-adjacency_array.h	/^	static double get_weight(const Graph &g, const std::list<EdgeIDType> &matching)$/;"	f	class:dipl::LocalMaximumMatching_AdjacencyArray	typeref:typename:double
+get_weight	local_maximum_matching-vertex_id_for_tie_breaking.h	/^	static double get_weight(const Graph &g, const std::list<EdgeIDType> &matching)$/;"	f	class:dipl::LocalMaximumMatching	typeref:typename:double
+get_weight	local_maximum_matching.h	/^	static double get_weight(const Graph &g, const std::list<Edge> &matching)$/;"	f	class:dipl::LocalMaximumMatching	typeref:typename:double
+get_weight	local_tree_maximum_matching.h	/^	static double get_weight(const Graph &g, const std::list<Edge> &matching)$/;"	f	class:dipl::LocalTreeMaximumMatching	typeref:typename:double
+get_weight	mixed-karp_sipser_and_local_max.h	/^	static double get_weight(const Graph &g, const std::list<Edge> &matching)$/;"	f	class:dipl::MixedKarpSipserLocalMax	typeref:typename:double
+get_weight	parallel_local_maximum_matching.h	/^	static double get_weight(const Graph &g, std::vector<Edge> &matching)$/;"	f	class:dipl::ParallelLocalMaximumMatching	typeref:typename:double
+get_weight	parallel_local_tree_maximum_matching.h	/^	static double get_weight(const Graph &g, const std::vector<Edge> &matching)$/;"	f	class:dipl::ParallelLocalTreeMaximumMatching	typeref:typename:double
+ghost_node	parallel_forest_matching.h	/^		NodeIDType local_node, ghost_node;$/;"	m	struct:dipl::ParallelForestMatching::Partner	typeref:typename:NodeIDType
+hint_node	parallel_forest_matching.h	/^		NodeIDType hint_node; \/\/ is local node on receiving side that is adjacent to subtree_root$/;"	m	struct:dipl::ParallelForestMatching::ParallelTreeInfo	typeref:typename:NodeIDType
+hint_node	parallel_forest_matching.h	/^		NodeIDType hint_node; \/\/ is local node on receiving side that is adjacent to subtree_root$/;"	m	struct:dipl::ParallelForestMatching::SubtreeResultMSG	typeref:typename:NodeIDType
+id	parallel_forest_matching.h	/^		int id; \/\/ Pocess ID$/;"	m	struct:dipl::ParallelForestMatching::Partner	typeref:typename:int
+incident_edges_iterator	karp_sipser.h	/^		typedef typename Graph::incident_edges_iterator incident_edges_iterator;$/;"	t	function:dipl::KarpSipser::is_maximal_matching	typeref:typename:Graph::incident_edges_iterator
+incident_edges_iterator	local_maximum_matching-adjacency_array.h	/^		typedef typename Graph::incident_edges_iterator incident_edges_iterator;$/;"	t	function:dipl::LocalMaximumMatching_AdjacencyArray::compute_weighted_matching	typeref:typename:Graph::incident_edges_iterator
+incident_edges_iterator	local_maximum_matching-adjacency_array.h	/^		typedef typename Graph::incident_edges_iterator incident_edges_iterator;$/;"	t	function:dipl::LocalMaximumMatching_AdjacencyArray::deactivate_edge_and_adjacent_edges	typeref:typename:Graph::incident_edges_iterator
+incident_edges_iterator	local_maximum_matching-adjacency_array.h	/^		typedef typename Graph::incident_edges_iterator incident_edges_iterator;$/;"	t	function:dipl::LocalMaximumMatching_AdjacencyArray::get_maximal_incident_edge	typeref:typename:Graph::incident_edges_iterator
+incident_edges_iterator	local_maximum_matching-adjacency_array.h	/^		typedef typename Graph::incident_edges_iterator incident_edges_iterator;$/;"	t	function:dipl::LocalMaximumMatching_AdjacencyArray::is_maximal_matching	typeref:typename:Graph::incident_edges_iterator
+incident_edges_iterator	mixed-karp_sipser_and_local_max.h	/^		typedef typename Graph::incident_edges_iterator incident_edges_iterator;$/;"	t	function:dipl::MixedKarpSipserLocalMax::get_maximal_incident_edge	typeref:typename:Graph::incident_edges_iterator
+incident_edges_iterator	mixed-karp_sipser_and_local_max.h	/^		typedef typename Graph::incident_edges_iterator incident_edges_iterator;$/;"	t	function:dipl::MixedKarpSipserLocalMax::is_maximal_matching	typeref:typename:Graph::incident_edges_iterator
+incoming_matched	parallel_forest_matching.h	/^		WeightType incoming_matched;$/;"	m	struct:dipl::ParallelForestMatching::SubtreeResultMSG	typeref:typename:WeightType
+incoming_not_matched	parallel_forest_matching.h	/^		WeightType incoming_not_matched;$/;"	m	struct:dipl::ParallelForestMatching::SubtreeResultMSG	typeref:typename:WeightType
+init	parallel_local_maximum_matching.h	/^	static void init()$/;"	f	class:dipl::ParallelLocalMaximumMatching	typeref:typename:void
+init	parallel_local_tree_maximum_matching.h	/^	static void init()$/;"	f	class:dipl::ParallelLocalTreeMaximumMatching	typeref:typename:void
+is_active_src	parallel_forest_matching.h	/^		bool is_active_src; \/\/ states if we still receive messages from this process$/;"	m	struct:dipl::ParallelForestMatching::Partner	typeref:typename:bool
+is_active_tgt	parallel_forest_matching.h	/^		bool is_active_tgt; \/\/ states if we still send messages to this process$/;"	m	struct:dipl::ParallelForestMatching::Partner	typeref:typename:bool
+is_global_max	parallel_forest_matching.h	/^		bool is_global_max;$/;"	m	struct:dipl::ParallelForestMatching::BorderComponent	typeref:typename:bool
+is_maximal_matching	karp_sipser.h	/^	static bool is_maximal_matching(const std::list<Edge> &matchings,$/;"	f	class:dipl::KarpSipser	typeref:typename:bool
+is_maximal_matching	local_maximum_matching-adjacency_array.h	/^	static bool is_maximal_matching(const std::list<EdgeIDType> &matchings,$/;"	f	class:dipl::LocalMaximumMatching_AdjacencyArray	typeref:typename:bool
+is_maximal_matching	local_maximum_matching-vertex_id_for_tie_breaking.h	/^	static bool is_maximal_matching(std::list<typename Graph::EdgeIDType> &matchings,$/;"	f	class:dipl::LocalMaximumMatching	typeref:typename:bool
+is_maximal_matching	local_maximum_matching.h	/^	static bool is_maximal_matching(std::list<Edge> &matchings,$/;"	f	class:dipl::LocalMaximumMatching	typeref:typename:bool
+is_maximal_matching	local_tree_maximum_matching.h	/^	static bool is_maximal_matching(std::list<Edge> &matchings,$/;"	f	class:dipl::LocalTreeMaximumMatching	typeref:typename:bool
+is_maximal_matching	mixed-karp_sipser_and_local_max.h	/^	static bool is_maximal_matching(const std::list<Edge> &matchings,$/;"	f	class:dipl::MixedKarpSipserLocalMax	typeref:typename:bool
+isend_parallel_tree_info_messages	parallel_forest_matching.h	/^	void isend_parallel_tree_info_messages()$/;"	f	class:dipl::ParallelForestMatching	typeref:typename:void
+isend_subtree_messages	parallel_forest_matching.h	/^	void isend_subtree_messages()$/;"	f	class:dipl::ParallelForestMatching	typeref:typename:void
+isend_top_down_messages	parallel_forest_matching.h	/^	void isend_top_down_messages()$/;"	f	class:dipl::ParallelForestMatching	typeref:typename:void
+iterator	parallel_forest_matching.h	/^		typedef typename std::list<Partner>::iterator iterator;$/;"	t	struct:dipl::ParallelForestMatching::BorderComponent	typeref:typename:std::list<Partner>::iterator
+iterator	parallel_forest_matching.h	/^		typedef typename std::list<Partner>::iterator iterator;$/;"	t	struct:dipl::ParallelForestMatching::ConnectionComponent	typeref:typename:std::list<Partner>::iterator
+local_node	parallel_forest_matching.h	/^		NodeIDType local_node, ghost_node;$/;"	m	struct:dipl::ParallelForestMatching::Partner	typeref:typename:NodeIDType
+log_num_ghost_vertices	parallel_forest_matching.h	/^	NodeIDType num_local_vertices, num_ghost_vertices, log_num_ghost_vertices;$/;"	m	class:dipl::ParallelForestMatching	typeref:typename:NodeIDType
+matched_ghostnode_messages_of_proc	parallel_local_tree_maximum_matching.h	/^	static std::vector< std::pair< std::vector<NodeIDType>, MPI_Request> > matched_ghostnode_messag/;"	m	class:dipl::ParallelLocalTreeMaximumMatching	typeref:typename:std::vector<std::pair<std::vector<NodeIDType>,MPI_Request>>
+matched_ghostnode_messages_of_proc	parallel_local_tree_maximum_matching.h	/^ParallelLocalTreeMaximumMatching<Graph, adjust_id>::matched_ghostnode_messages_of_proc;$/;"	m	class:dipl::ParallelLocalTreeMaximumMatching<Graph, adjust_id>	typeref:typename:std::vector<std::pair<std::vector<typename Graph::NodeIDType>,MPI_Request>>
+matched_messages_of_proc	parallel_local_maximum_matching.h	/^	ParallelLocalMaximumMatching<Graph, adjust_id>::matched_messages_of_proc;$/;"	m	class:dipl::ParallelLocalMaximumMatching<Graph, adjust_id>	typeref:typename:std::vector<std::pair<std::vector<typename ParallelLocalMaximumMatching<Graph,adjust_id>::NodeIDType>,MPI_Request>>
+matched_messages_of_proc	parallel_local_maximum_matching.h	/^	static std::vector< std::pair< std::vector<NodeIDType>, MPI_Request> > matched_messages_of_proc/;"	m	class:dipl::ParallelLocalMaximumMatching	typeref:typename:std::vector<std::pair<std::vector<NodeIDType>,MPI_Request>>
+matched_nodes_tag	parallel_local_tree_maximum_matching.h	/^	static const int matched_nodes_tag = 1;$/;"	m	class:dipl::ParallelLocalTreeMaximumMatching	typeref:typename:const int
+matched_recv_messages	parallel_local_maximum_matching.h	/^	ParallelLocalMaximumMatching<Graph, adjust_id>::matched_recv_messages;$/;"	m	class:dipl::ParallelLocalMaximumMatching<Graph, adjust_id>	typeref:typename:std::vector<std::vector<typename ParallelLocalMaximumMatching<Graph,adjust_id>::NodeIDType>>
+matched_recv_messages	parallel_local_maximum_matching.h	/^	static std::vector< std::vector<NodeIDType> > matched_recv_messages;$/;"	m	class:dipl::ParallelLocalMaximumMatching	typeref:typename:std::vector<std::vector<NodeIDType>>
+max_weighted_matching_of_edge_list	tree_matching.h	/^void max_weighted_matching_of_edge_list(const Graph &g,$/;"	f	typeref:typename:void
+msg_info	parallel_forest_matching.h	/^		long msg_info;$/;"	m	struct:dipl::ParallelForestMatching::ComponentMSG	typeref:typename:long
+msg_info	parallel_forest_matching.h	/^		unsigned char msg_info;$/;"	m	struct:dipl::ParallelForestMatching::TopDownMSG	typeref:typename:unsigned char
+msg_tag	parallel_local_tree_maximum_matching.h	/^	static const int msg_tag = 0;$/;"	m	class:dipl::ParallelLocalTreeMaximumMatching	typeref:typename:const int
+msg_tag_candidates	parallel_local_maximum_matching.h	/^	static const unsigned int msg_tag_candidates = 0;$/;"	m	class:dipl::ParallelLocalMaximumMatching	typeref:typename:const unsigned int
+msg_tag_ghost_vertices	parallel_local_maximum_matching.h	/^	static const unsigned int msg_tag_ghost_vertices = 0x40000000;$/;"	m	class:dipl::ParallelLocalMaximumMatching	typeref:typename:const unsigned int
+msgs_from_other_partners	parallel_forest_matching.h	/^		unsigned int msgs_from_other_partners; \/\/ used for: do we receive messages from c\\p? if > 0/;"	m	struct:dipl::ParallelForestMatching::Partner	typeref:typename:unsigned int
+msgs_to_receive	parallel_local_maximum_matching.h	/^	static unsigned int msgs_to_receive;$/;"	m	class:dipl::ParallelLocalMaximumMatching	typeref:typename:unsigned int
+msgs_to_receive	parallel_local_maximum_matching.h	/^unsigned int ParallelLocalMaximumMatching<Graph, adjust_id>::msgs_to_receive = 0;$/;"	m	class:dipl::ParallelLocalMaximumMatching<Graph, adjust_id>	typeref:typename:unsigned int
+next_local_tree_pos	parallel_forest_matching.h	/^	NodeIDType	next_local_tree_pos;$/;"	m	class:dipl::ParallelForestMatching	typeref:typename:NodeIDType
+num_ghost_vertices	parallel_forest_matching.h	/^	NodeIDType num_local_vertices, num_ghost_vertices, log_num_ghost_vertices;$/;"	m	class:dipl::ParallelForestMatching	typeref:typename:NodeIDType
+num_local_vertices	parallel_forest_matching.h	/^	NodeIDType num_local_vertices, num_ghost_vertices, log_num_ghost_vertices;$/;"	m	class:dipl::ParallelForestMatching	typeref:typename:NodeIDType
+number_of_components	parallel_forest_matching.h	/^		NodeIDType number_of_components;$/;"	m	struct:dipl::ParallelForestMatching::ParallelTreeInfo	typeref:typename:NodeIDType
+number_of_messages_received	parallel_local_tree_maximum_matching.h	/^	static long number_of_messages_sent, number_of_messages_received;$/;"	m	class:dipl::ParallelLocalTreeMaximumMatching	typeref:typename:long
+number_of_messages_received	parallel_local_tree_maximum_matching.h	/^ParallelLocalTreeMaximumMatching<Graph, adjust_id>::number_of_messages_received;$/;"	m	class:dipl::ParallelLocalTreeMaximumMatching<Graph, adjust_id>	typeref:typename:long
+number_of_messages_sent	parallel_local_tree_maximum_matching.h	/^	static long number_of_messages_sent, number_of_messages_received;$/;"	m	class:dipl::ParallelLocalTreeMaximumMatching	typeref:typename:long
+number_of_messages_sent	parallel_local_tree_maximum_matching.h	/^ParallelLocalTreeMaximumMatching<Graph, adjust_id>::number_of_messages_sent;$/;"	m	class:dipl::ParallelLocalTreeMaximumMatching<Graph, adjust_id>	typeref:typename:long
+number_of_mpi_messages_received	parallel_forest_matching.h	/^	long number_of_mpi_messages_sent, number_of_mpi_messages_received;$/;"	m	class:dipl::ParallelForestMatching	typeref:typename:long
+number_of_mpi_messages_sent	parallel_forest_matching.h	/^	long number_of_mpi_messages_sent, number_of_mpi_messages_received;$/;"	m	class:dipl::ParallelForestMatching	typeref:typename:long
+number_of_nodes	parallel_forest_matching.h	/^		NodeIDType number_of_nodes;$/;"	m	struct:dipl::ParallelForestMatching::ParallelTreeInfo	typeref:typename:NodeIDType
+number_of_sent_messages	parallel_local_maximum_matching.h	/^	static long long number_of_sent_messages;$/;"	m	class:dipl::ParallelLocalMaximumMatching	typeref:typename:long long
+number_of_sent_messages	parallel_local_maximum_matching.h	/^long long ParallelLocalMaximumMatching<Graph, adjust_id>::number_of_sent_messages = 0;$/;"	m	class:dipl::ParallelLocalMaximumMatching<Graph, adjust_id>	typeref:typename:long long
+operator <<	parallel_forest_matching.h	/^		friend std::ostream& operator<< (std::ostream &out, const ComponentMSG &msg)$/;"	f	class:dipl::ParallelForestMatching	typeref:typename:std::ostream &
+operator <<	parallel_forest_matching.h	/^		friend std::ostream& operator<< (std::ostream &out, const Partner &p)$/;"	f	class:dipl::ParallelForestMatching	typeref:typename:std::ostream &
+operator <<	parallel_forest_matching.h	/^		friend std::ostream& operator<< (std::ostream &out, const SubtreeResultMSG &msg)$/;"	f	class:dipl::ParallelForestMatching	typeref:typename:std::ostream &
+operator <<	parallel_forest_matching.h	/^std::ostream& operator<< (std::ostream &out, const typename dipl::ParallelForestMatching<T>::Con/;"	f	typeref:typename:std::ostream &
+outfile_parallel_tree_info	parallel_forest_matching.h	/^	std::ofstream outfile_parallel_tree_info;$/;"	m	class:dipl::ParallelForestMatching	typeref:typename:std::ofstream
+outfile_std_out	parallel_forest_matching.h	/^	std::ofstream outfile_std_out;$/;"	m	class:dipl::ParallelForestMatching	typeref:typename:std::ofstream
+parallel_tree_info_tag	parallel_forest_matching.h	/^	static const int parallel_tree_info_tag = 11;$/;"	m	class:dipl::ParallelForestMatching	typeref:typename:const int
+parent_matched	parallel_forest_matching.h	/^		bool parent_matched, used_incoming;$/;"	m	struct:dipl::ParallelForestMatching::ActiveNodeInfo	typeref:typename:bool
+parent_matched	parallel_forest_matching.h	/^		static const unsigned char parent_matched = 1;$/;"	m	struct:dipl::ParallelForestMatching::TopDownMSG	typeref:typename:const unsigned char
+parent_not_matched	parallel_forest_matching.h	/^		static const unsigned char parent_not_matched = 2;$/;"	m	struct:dipl::ParallelForestMatching::TopDownMSG	typeref:typename:const unsigned char
+partner	parallel_local_maximum_matching.h	/^		NodeIDType partner;$/;"	m	struct:dipl::ParallelLocalMaximumMatching::Candidate	typeref:typename:NodeIDType
+partner	parallel_local_tree_maximum_matching.h	/^		NodeIDType partner;$/;"	m	struct:dipl::ParallelLocalTreeMaximumMatching::Candidate	typeref:typename:NodeIDType
+partner_set	parallel_forest_matching.h	/^		std::list< Partner > partner_set;$/;"	m	struct:dipl::ParallelForestMatching::ConnectionComponent	typeref:typename:std::list<Partner>
+pending_msgs_of_root	parallel_forest_matching.h	/^	std::vector<NodeIDType> pending_msgs_of_root;$/;"	m	class:dipl::ParallelForestMatching	typeref:typename:std::vector<NodeIDType>
+probe_and_compute_local_tree_matching	parallel_forest_matching.h	/^	void probe_and_compute_local_tree_matching(int src, int tag, MPI_Comm comm,$/;"	f	class:dipl::ParallelForestMatching	typeref:typename:void
+probe_some	parallel_forest_matching.h	/^	bool probe_some(std::vector<bool> &active_src, int tag, MPI_Comm comm, MPI_Status *status)$/;"	f	class:dipl::ParallelForestMatching	typeref:typename:bool
+proc_bottom_up_buffers	parallel_forest_matching.h	/^	std::vector< std::list< std::vector<SubtreeResultMSG> > > proc_bottom_up_buffers;$/;"	m	class:dipl::ParallelForestMatching	typeref:typename:std::vector<std::list<std::vector<SubtreeResultMSG>>>
+proc_id	parallel_forest_matching.h	/^	int procs, proc_id;$/;"	m	class:dipl::ParallelForestMatching	typeref:typename:int
+proc_is_active_src	parallel_forest_matching.h	/^	std::vector<bool> proc_is_active_src;$/;"	m	class:dipl::ParallelForestMatching	typeref:typename:std::vector<bool>
+proc_requests	parallel_forest_matching.h	/^	std::vector< std::list<MPI_Request> > proc_requests;$/;"	m	class:dipl::ParallelForestMatching	typeref:typename:std::vector<std::list<MPI_Request>>
+proc_subtree_info_buffers	parallel_forest_matching.h	/^	std::vector< std::list< std::vector<ParallelTreeInfo> > > proc_subtree_info_buffers;$/;"	m	class:dipl::ParallelForestMatching	typeref:typename:std::vector<std::list<std::vector<ParallelTreeInfo>>>
+proc_top_down_buffers	parallel_forest_matching.h	/^	std::vector< std::list< std::vector<TopDownMSG> > > proc_top_down_buffers;$/;"	m	class:dipl::ParallelForestMatching	typeref:typename:std::vector<std::list<std::vector<TopDownMSG>>>
+procs	parallel_forest_matching.h	/^	int procs, proc_id;$/;"	m	class:dipl::ParallelForestMatching	typeref:typename:int
+push_back	parallel_forest_matching.h	/^		void push_back(const Partner &e)$/;"	f	struct:dipl::ParallelForestMatching::ConnectionComponent	typeref:typename:void
+receive_candidates_of_ghostnodes	parallel_local_tree_maximum_matching.h	/^	static void receive_candidates_of_ghostnodes(const Graph &g, std::vector<Candidate> &candidate_/;"	f	class:dipl::ParallelLocalTreeMaximumMatching	typeref:typename:void
+receive_ghost_candidates	parallel_local_maximum_matching.h	/^	static void receive_ghost_candidates(const Graph &g, const std::vector<Candidate> &candidate_of/;"	f	class:dipl::ParallelLocalMaximumMatching	typeref:typename:void
+receive_ghost_candidates_irecv	parallel_local_maximum_matching.h	/^	static void receive_ghost_candidates_irecv(const Graph &g, const std::vector<Candidate> &candid/;"	f	class:dipl::ParallelLocalMaximumMatching	typeref:typename:void
+receive_information_about_matched_ghost_nodes	parallel_local_maximum_matching.h	/^	static void receive_information_about_matched_ghost_nodes(const Graph &g, std::vector<bool> &ma/;"	f	class:dipl::ParallelLocalMaximumMatching	typeref:typename:void
+receive_information_about_matched_ghost_nodes_irecv	parallel_local_maximum_matching.h	/^	static void receive_information_about_matched_ghost_nodes_irecv(const Graph &g, std::vector<boo/;"	f	class:dipl::ParallelLocalMaximumMatching	typeref:typename:void
+receive_matched_ghostnodes	parallel_local_tree_maximum_matching.h	/^	static void receive_matched_ghostnodes(const Graph &g,$/;"	f	class:dipl::ParallelLocalTreeMaximumMatching	typeref:typename:void
+receive_message_and_add_matched_edges	parallel_forest_matching.h	/^	void receive_message_and_add_matched_edges(MPI_Status &status,$/;"	f	class:dipl::ParallelForestMatching	typeref:typename:void
+receive_message_and_add_parallel_tree_infos	parallel_forest_matching.h	/^	void receive_message_and_add_parallel_tree_infos(MPI_Status &status, NodeIDType &remaining_root/;"	f	class:dipl::ParallelForestMatching	typeref:typename:void
+receive_message_and_fill_subtree_table	parallel_forest_matching.h	/^	void receive_message_and_fill_subtree_table(MPI_Status &status, NodeIDType &remaining_roots)$/;"	f	class:dipl::ParallelForestMatching	typeref:typename:void
+recv_requests	parallel_local_maximum_matching.h	/^	static std::vector<MPI_Request> recv_requests;$/;"	m	class:dipl::ParallelLocalMaximumMatching	typeref:typename:std::vector<MPI_Request>
+recv_requests	parallel_local_maximum_matching.h	/^std::vector<MPI_Request> ParallelLocalMaximumMatching<Graph, adjust_id>::recv_requests;$/;"	m	class:dipl::ParallelLocalMaximumMatching<Graph, adjust_id>	typeref:typename:std::vector<MPI_Request>
+remove_inactive_nodes	local_maximum_matching-adjacency_array.h	/^	static void remove_inactive_nodes(std::list<NodeIDType> &active_nodes,$/;"	f	class:dipl::LocalMaximumMatching_AdjacencyArray	typeref:typename:void
+remove_inactive_nodes	mixed-karp_sipser_and_local_max.h	/^	static void remove_inactive_nodes(std::list<NodeIDType> &active_nodes,$/;"	f	class:dipl::MixedKarpSipserLocalMax	typeref:typename:void
+reset	parallel_forest_matching.h	/^	void reset(const std::vector<EdgeIDType> &local_edges,$/;"	f	class:dipl::ParallelForestMatching	typeref:typename:void
+root_candidate	parallel_forest_matching.h	/^		NodeIDType root_candidate; \/\/ id of the root node$/;"	m	struct:dipl::ParallelForestMatching::ConnectionComponent	typeref:typename:NodeIDType
+root_edge	parallel_forest_matching.h	/^		Edge root_edge;$/;"	m	struct:dipl::ParallelForestMatching::BorderComponent	typeref:typename:Edge
+root_edge_ghost_node	parallel_forest_matching.h	/^		NodeIDType root_edge_ghost_node;$/;"	m	struct:dipl::ParallelForestMatching::ConnectionComponent	typeref:typename:NodeIDType
+root_edge_local_node	parallel_forest_matching.h	/^		NodeIDType root_edge_local_node;$/;"	m	struct:dipl::ParallelForestMatching::ConnectionComponent	typeref:typename:NodeIDType
+roots_of_local_trees_ptr	parallel_forest_matching.h	/^	std::vector<NodeIDType> *roots_of_local_trees_ptr;$/;"	m	class:dipl::ParallelForestMatching	typeref:typename:std::vector<NodeIDType> *
+round	parallel_local_maximum_matching.h	/^	static unsigned int round;$/;"	m	class:dipl::ParallelLocalMaximumMatching	typeref:typename:unsigned int
+round	parallel_local_maximum_matching.h	/^unsigned int ParallelLocalMaximumMatching<Graph, adjust_id>::round = 0;$/;"	m	class:dipl::ParallelLocalMaximumMatching<Graph, adjust_id>	typeref:typename:unsigned int
+send_candidates_of_ghostnodes	parallel_local_tree_maximum_matching.h	/^	static void send_candidates_of_ghostnodes(const Graph &g, std::vector<Candidate> &candidate_of_/;"	f	class:dipl::ParallelLocalTreeMaximumMatching	typeref:typename:void
+send_matched_ghostnodes_incident_to_non_parallel_tree_edges	parallel_local_tree_maximum_matching.h	/^	static void send_matched_ghostnodes_incident_to_non_parallel_tree_edges(const Graph &g,$/;"	f	class:dipl::ParallelLocalTreeMaximumMatching	typeref:typename:void
+send_messages	parallel_local_maximum_matching.h	/^	static void send_messages(const Graph &g, std::vector< std::pair< std::vector<Message>, MPI_Req/;"	f	class:dipl::ParallelLocalMaximumMatching	typeref:typename:void
+send_messages	parallel_local_maximum_matching.h	/^	static void send_messages(const Graph &g, std::vector< std::pair< std::vector<NodeIDType>, MPI_/;"	f	class:dipl::ParallelLocalMaximumMatching	typeref:typename:void
+send_messages	parallel_local_tree_maximum_matching.h	/^	static void send_messages(const Graph &g, std::vector< std::pair< std::vector<Message>, MPI_Req/;"	f	class:dipl::ParallelLocalTreeMaximumMatching	typeref:typename:void
+send_messages	parallel_local_tree_maximum_matching.h	/^	static void send_messages(const Graph &g, std::vector< std::pair< std::vector<NodeIDType>, MPI_/;"	f	class:dipl::ParallelLocalTreeMaximumMatching	typeref:typename:void
+sender_ghost	parallel_forest_matching.h	/^		NodeIDType sender_ghost;$/;"	m	struct:dipl::ParallelForestMatching::BorderComponentMSG	typeref:typename:NodeIDType
+sender_ghost_node	parallel_forest_matching.h	/^		NodeIDType sender_ghost_node;$/;"	m	struct:dipl::ParallelForestMatching::ComponentMSG	typeref:typename:NodeIDType
+sender_local	parallel_forest_matching.h	/^		NodeIDType sender_local;$/;"	m	struct:dipl::ParallelForestMatching::BorderComponentMSG	typeref:typename:NodeIDType
+sender_local_node	parallel_forest_matching.h	/^		NodeIDType sender_local_node;$/;"	m	struct:dipl::ParallelForestMatching::ComponentMSG	typeref:typename:NodeIDType
+sent_bytes	parallel_local_maximum_matching.h	/^	static long long sent_bytes;$/;"	m	class:dipl::ParallelLocalMaximumMatching	typeref:typename:long long
+sent_bytes	parallel_local_maximum_matching.h	/^long long ParallelLocalMaximumMatching<Graph, adjust_id>::sent_bytes = 0;$/;"	m	class:dipl::ParallelLocalMaximumMatching<Graph, adjust_id>	typeref:typename:long long
+set	parallel_local_maximum_matching.h	/^		void set(const WeightType weight, const NodeIDType partner)$/;"	f	struct:dipl::ParallelLocalMaximumMatching::Candidate	typeref:typename:void
+set	parallel_local_tree_maximum_matching.h	/^		void set(const EdgeIDType edge_id, const NodeIDType partner)$/;"	f	struct:dipl::ParallelLocalTreeMaximumMatching::Candidate	typeref:typename:void
+set_local_candidates	parallel_local_tree_maximum_matching.h	/^	static void set_local_candidates(const Graph &g, std::vector<Candidate> &candidate_of_node)$/;"	f	class:dipl::ParallelLocalTreeMaximumMatching	typeref:typename:void
+set_local_maximal_candidate_of_nodes	parallel_local_maximum_matching.h	/^	static void set_local_maximal_candidate_of_nodes(Graph &g, std::vector<Candidate> &candidate_of/;"	f	class:dipl::ParallelLocalMaximumMatching	typeref:typename:void
+set_matched_ghost_nodes_and_add_edge_to_matching	parallel_local_maximum_matching.h	/^	static void set_matched_ghost_nodes_and_add_edge_to_matching(Graph &g,$/;"	f	class:dipl::ParallelLocalMaximumMatching	typeref:typename:void
+set_matched_local_nodes_and_add_edge_to_matching	parallel_local_maximum_matching.h	/^	static void set_matched_local_nodes_and_add_edge_to_matching(Graph &g,$/;"	f	class:dipl::ParallelLocalMaximumMatching	typeref:typename:void
+set_matched_nodes	parallel_local_tree_maximum_matching.h	/^	static void set_matched_nodes(const Graph &g,$/;"	f	class:dipl::ParallelLocalTreeMaximumMatching	typeref:typename:void
+set_maximal_adjacent_nodes	parallel_local_tree_maximum_matching.h	/^	static void set_maximal_adjacent_nodes(const Graph &g, std::vector<Candidate> &candidate_of_nod/;"	f	class:dipl::ParallelLocalTreeMaximumMatching	typeref:typename:void
+set_pending_msgs_of_roots	parallel_forest_matching.h	/^	void set_pending_msgs_of_roots(const Graph &g,$/;"	f	class:dipl::ParallelForestMatching	typeref:typename:void
+set_recv_buffers	parallel_local_maximum_matching.h	/^	static void set_recv_buffers(const Graph &g)$/;"	f	class:dipl::ParallelLocalMaximumMatching	typeref:typename:void
+size	parallel_forest_matching.h	/^		unsigned int size() const$/;"	f	struct:dipl::ParallelForestMatching::ConnectionComponent	typeref:typename:unsigned int
+src	parallel_local_maximum_matching.h	/^		NodeIDType src;$/;"	m	struct:dipl::ParallelLocalMaximumMatching::Message	typeref:typename:NodeIDType
+src	parallel_local_tree_maximum_matching.h	/^		NodeIDType src;$/;"	m	struct:dipl::ParallelLocalTreeMaximumMatching::Message	typeref:typename:NodeIDType
+subtree_info	parallel_forest_matching.h	/^	std::vector<ParallelTreeInfo> subtree_info;$/;"	m	class:dipl::ParallelForestMatching	typeref:typename:std::vector<ParallelTreeInfo>
+subtree_root	parallel_forest_matching.h	/^		NodeIDType subtree_root; \/\/ is ghost node on receiving side - local on sending side$/;"	m	struct:dipl::ParallelForestMatching::ParallelTreeInfo	typeref:typename:NodeIDType
+subtree_root	parallel_forest_matching.h	/^		NodeIDType subtree_root; \/\/ is ghost node on receiving side - local on sending side$/;"	m	struct:dipl::ParallelForestMatching::SubtreeResultMSG	typeref:typename:NodeIDType
+subtree_table	parallel_forest_matching.h	/^	std::vector<std::pair<std::pair<typename Graph::WeightType, typename Graph::WeightType>, typena/;"	m	class:dipl::ParallelForestMatching	typeref:typename:std::vector<std::pair<std::pair<typename Graph::WeightType,typename Graph::WeightType>,typename Graph::NodeIDType>>
+tgt_node	parallel_forest_matching.h	/^		NodeIDType tgt_node; \/\/ is local on receiving side and ghost on sending side$/;"	m	struct:dipl::ParallelForestMatching::TopDownMSG	typeref:typename:NodeIDType
+top_down_tag	parallel_forest_matching.h	/^	static const int top_down_tag = 9;$/;"	m	class:dipl::ParallelForestMatching	typeref:typename:const int
+tree_max_weighted_matching	parallel_forest_matching.h	/^	tree_max_weighted_matching(const NodeIDType &tgt_node,$/;"	f	class:dipl::ParallelForestMatching	typeref:typename:void
+tree_max_weighted_matching	tree_matching.h	/^tree_max_weighted_matching(const Graph &g,$/;"	f	typeref:typename:void
+tree_size_and_depth	tree_matching.h	/^void tree_size_and_depth(const TreeGraph &tree,$/;"	f	typeref:typename:void
+uf	parallel_forest_matching.h	/^	dipl::UnionFind<NodeIDType> uf; \/\/ don't forget to reset this values after each call of get_m/;"	m	class:dipl::ParallelForestMatching	typeref:typename:dipl::UnionFind<NodeIDType>
+use_incoming_edge	parallel_forest_matching.h	/^		static const unsigned char use_incoming_edge = 0;$/;"	m	struct:dipl::ParallelForestMatching::TopDownMSG	typeref:typename:const unsigned char
+used_incoming	parallel_forest_matching.h	/^		bool parent_matched, used_incoming;$/;"	m	struct:dipl::ParallelForestMatching::ActiveNodeInfo	typeref:typename:bool
+uses_outgoing_edge	parallel_forest_matching.h	/^		bool uses_outgoing_edge;$/;"	m	struct:dipl::ParallelForestMatching::SubtreeResultMSG	typeref:typename:bool
+wait_for_message_completion_and_reset_buffers	parallel_forest_matching.h	/^	void wait_for_message_completion_and_reset_buffers(std::vector< std::list<MPI_Request> > &proc_/;"	f	class:dipl::ParallelForestMatching	typeref:typename:void
+wait_for_pending_messages_and_add_parallel_tree_infos	parallel_forest_matching.h	/^	void wait_for_pending_messages_and_add_parallel_tree_infos(NodeIDType &remaining_roots)$/;"	f	class:dipl::ParallelForestMatching	typeref:typename:void
+wait_for_pending_messages_and_fill_subtree_table	parallel_forest_matching.h	/^	void wait_for_pending_messages_and_fill_subtree_table(NodeIDType &remaining_roots,$/;"	f	class:dipl::ParallelForestMatching	typeref:typename:void
+wait_for_pending_top_down_messages_and_add_matched_edges	parallel_forest_matching.h	/^	void wait_for_pending_top_down_messages_and_add_matched_edges(NodeIDType &number_of_incoming_me/;"	f	class:dipl::ParallelForestMatching	typeref:typename:void
+weight	parallel_local_maximum_matching.h	/^		WeightType weight;$/;"	m	struct:dipl::ParallelLocalMaximumMatching::Candidate	typeref:typename:WeightType
+~ParallelForestMatching	parallel_forest_matching.h	/^	~ParallelForestMatching()$/;"	f	class:dipl::ParallelForestMatching
