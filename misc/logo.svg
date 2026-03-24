@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1a1a2e"/>
+      <stop offset="100%" stop-color="#16213e"/>
+    </linearGradient>
+    <radialGradient id="glow-matched" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#ef5350" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#ef5350" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow-unmatched" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#42a5f5" stop-opacity="0.10"/>
+      <stop offset="100%" stop-color="#42a5f5" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="400" height="400" rx="40" fill="url(#bg)"/>
+
+  <!-- Glows -->
+  <ellipse cx="200" cy="200" rx="180" ry="180" fill="url(#glow-matched)"/>
+  <ellipse cx="200" cy="200" rx="140" ry="140" fill="url(#glow-unmatched)"/>
+
+  <!-- All edges (thin, dim) -->
+  <g stroke="#42a5f5" stroke-width="1.8" opacity="0.25">
+    <line x1="120" y1="75" x2="200" y2="55"/>
+    <line x1="120" y1="75" x2="95" y2="170"/>
+    <line x1="120" y1="75" x2="200" y2="155"/>
+    <line x1="200" y1="55" x2="300" y2="60"/>
+    <line x1="200" y1="55" x2="200" y2="155"/>
+    <line x1="95" y1="170" x2="200" y2="155"/>
+    <line x1="95" y1="170" x2="140" y2="265"/>
+    <line x1="200" y1="155" x2="300" y2="60"/>
+    <line x1="200" y1="155" x2="300" y2="175"/>
+    <line x1="200" y1="155" x2="140" y2="265"/>
+    <line x1="300" y1="60" x2="340" y2="130"/>
+    <line x1="300" y1="60" x2="300" y2="175"/>
+    <line x1="300" y1="175" x2="340" y2="130"/>
+    <line x1="300" y1="175" x2="340" y2="260"/>
+    <line x1="300" y1="175" x2="230" y2="280"/>
+    <line x1="140" y1="265" x2="230" y2="280"/>
+    <line x1="230" y1="280" x2="340" y2="260"/>
+    <line x1="340" y1="130" x2="340" y2="260"/>
+    <line x1="340" y1="260" x2="290" y2="345"/>
+    <line x1="230" y1="280" x2="290" y2="345"/>
+    <line x1="140" y1="265" x2="170" y2="350"/>
+    <line x1="230" y1="280" x2="170" y2="350"/>
+    <line x1="290" y1="345" x2="170" y2="350"/>
+  </g>
+
+  <!-- Matched edges (thick, bright red) -->
+  <line x1="120" y1="75" x2="95" y2="170" stroke="#ef5350" stroke-width="4.5" opacity="0.85"/>
+  <line x1="200" y1="55" x2="200" y2="155" stroke="#ef5350" stroke-width="4.5" opacity="0.85"/>
+  <line x1="300" y1="60" x2="340" y2="130" stroke="#ef5350" stroke-width="4.5" opacity="0.85"/>
+  <line x1="300" y1="175" x2="340" y2="260" stroke="#ef5350" stroke-width="4.5" opacity="0.85"/>
+  <line x1="140" y1="265" x2="230" y2="280" stroke="#ef5350" stroke-width="4.5" opacity="0.85"/>
+  <line x1="290" y1="345" x2="170" y2="350" stroke="#ef5350" stroke-width="4.5" opacity="0.85"/>
+
+  <!-- Matched nodes (red) -->
+  <circle cx="120" cy="75" r="12" fill="#ef5350"/>
+  <circle cx="95" cy="170" r="12" fill="#ef5350"/>
+  <circle cx="200" cy="55" r="12" fill="#ef5350"/>
+  <circle cx="200" cy="155" r="12" fill="#ef5350"/>
+  <circle cx="300" cy="60" r="12" fill="#ef5350"/>
+  <circle cx="340" cy="130" r="12" fill="#ef5350"/>
+  <circle cx="300" cy="175" r="12" fill="#ef5350"/>
+  <circle cx="340" cy="260" r="12" fill="#ef5350"/>
+  <circle cx="140" cy="265" r="12" fill="#ef5350"/>
+  <circle cx="230" cy="280" r="12" fill="#ef5350"/>
+  <circle cx="290" cy="345" r="12" fill="#ef5350"/>
+  <circle cx="170" cy="350" r="12" fill="#ef5350"/>
+</svg>
