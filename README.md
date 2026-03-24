@@ -46,6 +46,15 @@ If you use this software, please cite:
 
 ArXiv preprint: [https://arxiv.org/abs/1302.4587](https://arxiv.org/abs/1302.4587)
 
+## Installation
+
+### Homebrew
+
+```bash
+brew tap LocalMaxMatching/localmaxmatching
+brew install localmaxmatching
+```
+
 ## Requirements
 
 - C++ compiler with C++11 support (g++, clang++, or icpc)
