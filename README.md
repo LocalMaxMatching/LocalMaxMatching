@@ -53,7 +53,7 @@ cmake -B build -DCMAKE_BUILD_TYPE=Release
 cmake --build build -j$(nproc)
 ```
 
-Binaries are placed in `build/`. MPI targets are built automatically if MPI is found; otherwise they are skipped.
+Binaries are placed in `deploy/`. MPI targets are built automatically if MPI is found; otherwise they are skipped.
 
 ### Build Targets
 
@@ -89,32 +89,32 @@ Binaries are placed in `build/`. MPI targets are built automatically if MPI is f
 
 ```bash
 # Compute a maximum weight matching on a graph in METIS format
-./build/local_max_matching --read_graph graph.metis --edge_rating weight
+./deploy/local_max_matching --read_graph graph.metis --edge_rating weight
 
 # Compute a maximal cardinality matching (unit weights)
-./build/local_max_matching --read_graph graph.metis --edge_rating const
+./deploy/local_max_matching --read_graph graph.metis --edge_rating const
 
 # Use random edge weights with a specific seed
-./build/local_max_matching --read_graph graph.metis --edge_rating rand --seed 42
+./deploy/local_max_matching --read_graph graph.metis --edge_rating rand --seed 42
 
 # Run on a complete graph K_100
-./build/local_max_matching --kn --vertices 100 --edge_rating rand --seed 1
+./deploy/local_max_matching --kn --vertices 100 --edge_rating rand --seed 1
 
 # Run on a 2D grid graph
-./build/local_max_matching --grid --dim 2 --dim_length 100 --edge_rating rand --seed 1
+./deploy/local_max_matching --grid --dim 2 --dim_length 100 --edge_rating rand --seed 1
 
 # Run multiple repetitions
-./build/local_max_matching --read_graph graph.metis --edge_rating weight --repetitions 10
+./deploy/local_max_matching --read_graph graph.metis --edge_rating weight --repetitions 10
 ```
 
 ### Parallel (MPI)
 
 ```bash
 # Run with 4 MPI processes
-mpirun -np 4 ./build/parallel_local_max_matching --read_graph graph.metis --edge_rating weight
+mpirun -np 4 ./deploy/parallel_local_max_matching --read_graph graph.metis --edge_rating weight
 
 # With extended communication statistics
-mpirun -np 16 ./build/parallel_local_max_matching_more_info --read_graph graph.metis --edge_rating weight
+mpirun -np 16 ./deploy/parallel_local_max_matching_more_info --read_graph graph.metis --edge_rating weight
 ```
 
 ### Command-Line Options
